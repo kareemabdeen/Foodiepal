@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:food_app/core/utils/helper.dart';
-import 'package:food_app/features/Login/Presentaion/Views/Widgets/custom_button_widget.dart';
-import 'package:food_app/features/Login/Presentaion/Views/Widgets/login_description_widget.dart';
-import 'package:food_app/features/Login/Presentaion/Views/Widgets/login_image_widget.dart';
+
+import '../../../../../core/utils/helper.dart';
+import 'custom_button_widget.dart';
+import 'login_description_widget.dart';
+import 'login_image_widget.dart';
 
 class LoginViewBody extends StatelessWidget {
   const LoginViewBody({super.key});
@@ -15,7 +16,6 @@ class LoginViewBody extends StatelessWidget {
         padding: const EdgeInsets.only(
           left: 12,
           right: 12,
-          bottom: 18,
           top: 12,
         ), // changed
         child: Column(

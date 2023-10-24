@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/features/Home/Presentation/views/Styles/ItemsTextStyles.dart';
+
+import '../Styles/ItemsTextStyles.dart';
 
 class ResturantRatingAndDistanceWidget extends StatelessWidget {
   const ResturantRatingAndDistanceWidget({super.key});

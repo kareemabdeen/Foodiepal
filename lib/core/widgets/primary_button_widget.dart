@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/core/utils/helper.dart';
+
+import '../utils/helper.dart';
 
 class GeneralButton extends StatelessWidget {
   const GeneralButton({super.key, this.onPressed});

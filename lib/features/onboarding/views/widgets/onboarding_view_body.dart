@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/core/utils/helper.dart';
-import 'package:food_app/core/widgets/primary_button_widget.dart';
-import 'package:food_app/features/onboarding/data/onboarding_model.dart';
-import 'package:food_app/features/onboarding/views/widgets/swip_containers_list.dart';
+
+import '../../../../core/utils/helper.dart';
+import '../../../../core/widgets/primary_button_widget.dart';
+import '../../data/onboarding_model.dart';
+import 'swip_containers_list.dart';
 
 class OnBoardingViewBody extends StatefulWidget {
   const OnBoardingViewBody({super.key});
@@ -16,26 +17,26 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
 
   List<OnBoardingModel> onboardingList = [
     OnBoardingModel(
+      title: 'Dine In in fine resturants ',
+      image: 'assets/images/WhatsApp Image 2023-10-24 at 9.35.09 PM.jpeg',
+      subTitile:
+          'Get yummy deticious food at your\n service in within less time',
+    ),
+    OnBoardingModel(
       title: 'Food delivery at door step',
-      image: 'assets/images/Web capture_23-10-2023_19297_www.canva.com.jpeg',
+      image: 'assets/images/WhatsApp Image 2023-10-24 at 9.35.08 PM (1).jpeg',
       subTitile:
           'Get yummy deticious food at your\n service in within less time',
     ),
     OnBoardingModel(
       title: 'Grocery & Essentials Delivery ',
-      image: 'assets/images/Web capture_23-10-2023_192821_www.canva.com.jpeg',
-      subTitile:
-          'Get yummy deticious food at your\n service in within less time',
-    ),
-    OnBoardingModel(
-      title: 'Dine In in fine resturants ',
-      image: 'assets/images/Web capture_23-10-2023_192926_www.canva.com.jpeg',
+      image: 'assets/images/WhatsApp Image 2023-10-24 at 9.35.08 PM.jpeg',
       subTitile:
           'Get yummy deticious food at your\n service in within less time',
     ),
     OnBoardingModel(
       title: 'Get any Pacage Delivered',
-      image: 'assets/images/Web capture_23-10-2023_192941_www.canva.com.jpeg',
+      image: 'assets/images/WhatsApp Image 2023-10-24 at 9.35.08 PM (1).jpeg',
       subTitile:
           'Get yummy deticious food at your\n service in within less time',
     ),

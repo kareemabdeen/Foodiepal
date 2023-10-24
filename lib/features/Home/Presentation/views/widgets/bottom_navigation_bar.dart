@@ -47,14 +47,3 @@ class _BuildNavigatorBarState extends State<BuildNavigatorBar> {
     );
   }
 }
-
-class HomeView extends StatelessWidget {
-  const HomeView({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      bottomNavigationBar: BuildNavigatorBar(),
-    );
-  }
-}

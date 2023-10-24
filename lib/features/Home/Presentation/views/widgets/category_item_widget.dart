@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/core/utils/helper.dart';
-import 'package:food_app/features/Home/Presentation/views/Styles/ItemsTextStyles.dart';
+
+import '../../../../../core/utils/helper.dart';
+import '../Styles/ItemsTextStyles.dart';
 
 class CategoryItemWidget extends StatelessWidget {
   const CategoryItemWidget({super.key});

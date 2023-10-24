@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/core/utils/helper.dart';
+
+import '../../../../../core/utils/helper.dart';
 
 class LoginImageWidget extends StatelessWidget {
   const LoginImageWidget({super.key});

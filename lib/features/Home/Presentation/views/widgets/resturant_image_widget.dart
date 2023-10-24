@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/core/utils/helper.dart';
-import 'package:food_app/features/Home/Presentation/views/widgets/fav_cirular_button_widget.dart';
+
+import '../../../../../core/utils/helper.dart';
+import 'fav_cirular_button_widget.dart';
 
 class ResturantImageWidget extends StatelessWidget {
   const ResturantImageWidget({super.key});

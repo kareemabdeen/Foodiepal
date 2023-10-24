@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/features/Login/Presentaion/Views/login_view.dart';
+import 'package:food_app/features/onboarding/views/onboarding_view.dart';
 
 void main() {
   runApp(const FoodApp());
@@ -12,18 +12,18 @@ class FoodApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
-          bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-            backgroundColor: Colors.white,
-            elevation: 0,
-            selectedIconTheme: IconThemeData(color: Colors.transparent),
-          ),
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+          backgroundColor: Colors.white,
+          elevation: 0,
+          selectedIconTheme: IconThemeData(color: Colors.transparent),
         ),
-        home: const LoginView() //OnBoardingView(),
-        );
+      ),
+      home: const OnBoardingView(),
+    );
   }
 }

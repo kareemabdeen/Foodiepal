@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/features/Home/Presentation/views/Styles/ItemsTextStyles.dart';
-import 'package:food_app/features/Home/Presentation/views/widgets/resturant_rating_distance_widget.dart';
+
+import '../Styles/ItemsTextStyles.dart';
+import 'resturant_rating_distance_widget.dart';
 
 class ResturantDetailsWidget extends StatelessWidget {
   const ResturantDetailsWidget({super.key});
