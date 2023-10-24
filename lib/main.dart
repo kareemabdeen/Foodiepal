@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'features/onboarding/views/onboarding_view.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const FoodApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class FoodApp extends StatelessWidget {
+  const FoodApp({super.key});
 
   // This widget is the root of your application.
   @override
