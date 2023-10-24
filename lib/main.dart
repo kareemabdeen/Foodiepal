@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/features/Home/Presentation/views/home_view.dart';
 import 'package:food_app/features/Login/Presentaion/Views/login_view.dart';
-import 'package:food_app/features/onboarding/views/onboarding_view.dart';
 
 void main() {
   runApp(const FoodApp());

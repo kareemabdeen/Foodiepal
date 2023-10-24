@@ -1,24 +1,29 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/core/utils/helper.dart';
 
 class LoginDescription extends StatelessWidget {
   const LoginDescription({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       children: [
         SizedBox(
-          height: 10,
+          height: context.screenHight * .13,
         ),
-        Text(
+        const Text(
           'Login or create an account',
-          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+          ),
         ),
         SizedBox(
-          height: 5,
+          height: context.screenHight * .01,
         ),
-        Text(
-          'Login or create an account to receive rewards and save your details for a faster checkout experience.',
+        const Text(
+          'Login or create an account to receive rewards \nand save your details for a faster checkout \nexperience.',
           textAlign: TextAlign.center,
           style: TextStyle(fontSize: 16, color: Colors.grey),
         ),
