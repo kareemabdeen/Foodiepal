@@ -1,0 +1,23 @@
+import 'package:flutter/material.dart';
+import 'package:food_app/features/Home/Presentation/views/Styles/ItemsTextStyles.dart';
+
+class ResturantRatingAndDistanceWidget extends StatelessWidget {
+  const ResturantRatingAndDistanceWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Row(
+      children: [
+        Icon(
+          Icons.star,
+          color: Colors.orange,
+          size: 14,
+        ),
+        Text('4.2 | 1Km | 28 Mins',
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: ItemsTextStyles.textStyle14),
+      ],
+    );
+  }
+}
