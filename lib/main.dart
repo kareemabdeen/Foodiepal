@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'features/onboarding/views/onboarding_view.dart';
+import 'package:food_app/features/onboarding/views/onboarding_view.dart';
 
 void main() {
   runApp(const FoodApp());
@@ -16,8 +15,13 @@ class FoodApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+          backgroundColor: Colors.white,
+          elevation: 0,
+          selectedIconTheme: IconThemeData(color: Colors.transparent),
+        ),
       ),
       home: const OnBoardingView(),
     );
