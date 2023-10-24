@@ -25,13 +25,14 @@ abstract class StylesManager {
     fontSize: 16,
     color: Colors.white,
   );
+
    static final TextStyle buttonText = TextStyle(
     fontFamily: 'Montserrat',
     fontWeight: FontWeight.bold,
     fontSize: 16,
     color: Colors.white,
   );
-
+  
 //
 
 
