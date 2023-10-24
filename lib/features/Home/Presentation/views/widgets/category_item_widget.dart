@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/core/utils/helper.dart';
 import 'package:food_app/features/Home/Presentation/views/Styles/ItemsTextStyles.dart';
 
 class CategoryItemWidget extends StatelessWidget {
@@ -6,11 +7,11 @@ class CategoryItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double containerHeight = MediaQuery.of(context).size.height * 0.17;
-    double containerWidth = MediaQuery.of(context).size.width * 0.3;
+    double containerHeight = context.screenHight * 0.17;
+    double containerWidth = context.screenWidth * 0.3;
     return Container(
-      height: containerHeight,
-      width: containerWidth,
+      height: context.screenHight * 0.17,
+      width: context.screenWidth * 0.3,
       margin: const EdgeInsets.all(5),
       padding: const EdgeInsets.only(top: 12, left: 14),
       decoration: BoxDecoration(
