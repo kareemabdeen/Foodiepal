@@ -1,32 +1,29 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/features/onboarding/views/onboarding_view.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const FoodApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class FoodApp extends StatelessWidget {
+  const FoodApp({super.key});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+          backgroundColor: Colors.white,
+          elevation: 0,
+          selectedIconTheme: IconThemeData(color: Colors.transparent),
+        ),
       ),
-      home: const OnBoardingScreen(),
+      home: const OnBoardingView(),
     );
-  }
-}
-
-class OnBoardingScreen extends StatelessWidget {
-  const OnBoardingScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
   }
 }

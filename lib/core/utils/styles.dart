@@ -23,14 +23,6 @@ abstract class StylesManager {
     fontSize: 16,
     color: Colors.white,
   );
-  static final TextStyle buttonText = const TextStyle(
-    fontFamily: 'Montserrat',
-    fontWeight: FontWeight.bold,
-    fontSize: 16,
-    color: Colors.white,
-  );
-
-//
 
   static const titleMedium = TextStyle(
     fontSize: 18,
