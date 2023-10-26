@@ -1,40 +1,28 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 abstract class StylesManager {
+//on boarding assets
 
-//on boarding assets 
-
-  static final TextStyle textStyle32 = TextStyle(
+  static final TextStyle textStyle32 = const TextStyle(
     fontFamily: 'Montserrat',
     fontWeight: FontWeight.bold,
     fontSize: 32,
     color: Colors.white,
   );
 
-  static final TextStyle textStyle24 = TextStyle(
+  static final TextStyle textStyle24 = const TextStyle(
     fontFamily: 'Montserrat',
-    fontWeight: FontWeight.semiBold,
+    fontWeight: FontWeight.w600,
     fontSize: 24,
     color: Colors.white,
   );
 
-  static final TextStyle textStyle16 = TextStyle(
+  static final TextStyle textStyle16 = const TextStyle(
     fontFamily: 'Montserrat',
-    fontWeight: FontWeight.regular,
+    fontWeight: FontWeight.w400,
     fontSize: 16,
     color: Colors.white,
   );
-
-   static final TextStyle buttonText = TextStyle(
-    fontFamily: 'Montserrat',
-    fontWeight: FontWeight.bold,
-    fontSize: 16,
-    color: Colors.white,
-  );
-  
-//
-
 
   static const titleMedium = TextStyle(
     fontSize: 18,
@@ -56,17 +44,10 @@ abstract class StylesManager {
   static final textStyle30 = TextStyle(
     fontSize: 30,
     fontWeight: FontWeight.w900,
-    fontFamily: GoogleFonts.aclonica.toString(),
     letterSpacing: 1.2,
   );
   static const textStyle14 = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.normal,
   );
-
-  static const textStyle16 = TextStyle(
-    fontSize: 16,
-    fontWeight: FontWeight.w500,
-  );
 }
-
