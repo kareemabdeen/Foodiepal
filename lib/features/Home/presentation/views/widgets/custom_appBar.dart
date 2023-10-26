@@ -26,12 +26,16 @@ class CustomAppBar extends StatelessWidget {
             ),
           ],
         ),
-        IconButton(
-          icon: const Icon(
-            Icons.person_outline,
-            color: Colors.black,
+        Material(
+          borderRadius: BorderRadius.circular(50),
+          color: Colors.grey.shade200,
+          child: IconButton(
+            icon: const Icon(
+              Icons.person_outline,
+              color: Colors.black,
+            ),
+            onPressed: () {},
           ),
-          onPressed: () {},
         ),
       ],
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/features/Home/presentation/views/home_view.dart';
 import 'package:food_app/features/onboarding/views/onboarding_view.dart';
 
 void main() {
@@ -23,7 +24,9 @@ class FoodApp extends StatelessWidget {
           selectedIconTheme: IconThemeData(color: Colors.transparent),
         ),
       ),
-      home: const OnBoardingView(),
+      home: const SafeArea(
+        child: HomeView(),
+      ),
     );
   }
 }
