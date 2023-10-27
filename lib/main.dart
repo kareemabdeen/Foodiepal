@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:food_app/core/utils/app_router.dart';
 import 'package:food_app/features/Home/presentation/views/home_view.dart';
 import 'package:food_app/features/onboarding/views/onboarding_view.dart';
 
@@ -13,6 +15,7 @@ class FoodApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      onGenerateRoute: AppRouter.onGenerateRoutes,
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -24,8 +27,12 @@ class FoodApp extends StatelessWidget {
           selectedIconTheme: IconThemeData(color: Colors.transparent),
         ),
       ),
-      home: const SafeArea(
-        child: HomeView(),
+      home: const AnnotatedRegion<SystemUiOverlayStyle>(
+        value: SystemUiOverlayStyle(
+          statusBarIconBrightness: Brightness.dark,
+          statusBarColor: Colors.transparent,
+        ),
+        child: OnBoardingView(),
       ),
     );
   }

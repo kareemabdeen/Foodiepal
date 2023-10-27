@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/Features/Home/presentation/views/home_view.dart';
+import 'package:food_app/core/utils/app_router.dart';
 
 import '../../../../core/utils/helper.dart';
 import '../../../../core/widgets/primary_button_widget.dart';
@@ -42,6 +44,7 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
     ),
   ];
   int? currentPageNumber;
+
   @override
   void initState() {
     super.initState();
@@ -115,6 +118,11 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
                     ),
                     curve: Curves.easeInCirc,
                   );
+                  if (currentPageNumber == 3) {
+                    context.pushWithReplacmentNamed(
+                      AppRouter.kHomeView,
+                    );
+                  }
                 },
               ),
               SizedBox(

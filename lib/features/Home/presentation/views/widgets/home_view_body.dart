@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:food_app/core/utils/helper.dart';
 import 'package:food_app/features/Home/presentation/views/Styles/ItemsTextStyles.dart';
 import 'package:food_app/features/Home/presentation/views/widgets/resturant_details_widget.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -16,47 +17,46 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return const SingleChildScrollView(
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 15.0),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 5),
             child: CustomAppBar(),
           ),
-          const Padding(
+          Padding(
             padding: EdgeInsets.symmetric(horizontal: 15.0),
             child: CustomSearchTextField(),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 15.0),
-            child: SizedBox(
-              height: 140,
-              child: ListView.builder(
-                physics: const BouncingScrollPhysics(),
-                scrollDirection: Axis.horizontal,
-                itemCount: 3,
-                itemBuilder: (context, index) {
-                  return const CategoryItemWidget();
-                },
-              ),
+            padding: EdgeInsets.symmetric(vertical: 15.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                CategoryItemWidget(),
+                SizedBox(width: 10),
+                CategoryItemWidget(),
+                SizedBox(width: 10),
+                CategoryItemWidget(),
+              ],
             ),
           ),
-          const Padding(
+          Padding(
             padding: EdgeInsets.symmetric(vertical: 8.0),
             child: CustomCarouselSlider(),
           ),
-          const ListViewWithTitle(
+          ListViewWithTitle(
             listViewTitle: 'Best Offers',
             listViewWidget: ResturantListViewItem(),
           ),
-          const SizedBox(height: 15),
-          const ListViewWithTitle(
+          SizedBox(height: 15),
+          ListViewWithTitle(
             listViewTitle: 'Popular Restaurants',
             listViewWidget: ResturantListViewItem(),
           ),
-          const SizedBox(height: 15),
-          const ListViewWithTitle(
+          SizedBox(height: 15),
+          ListViewWithTitle(
             listViewTitle: 'Best To Dine-In',
             listViewWidget: ResturantListViewItem(),
           ),

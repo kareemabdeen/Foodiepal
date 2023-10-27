@@ -27,7 +27,7 @@ class CustomSearchTextField extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: () {},
-                    child: Icon(Icons.mic),
+                    child: const Icon(Icons.mic),
                   ),
                   const VerticalDivider(
                     thickness: 1,
@@ -35,7 +35,7 @@ class CustomSearchTextField extends StatelessWidget {
                   ),
                   GestureDetector(
                     onTap: () {},
-                    child: Icon(Icons.filter_list_alt),
+                    child: const Icon(Icons.filter_list_alt),
                   ),
                 ],
               ),
