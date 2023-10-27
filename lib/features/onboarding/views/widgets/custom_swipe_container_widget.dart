@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/core/utils/helper.dart';
 
 class CustomSwipeContainer extends StatelessWidget {
   const CustomSwipeContainer({
@@ -6,13 +7,15 @@ class CustomSwipeContainer extends StatelessWidget {
     this.color = const Color(0xffD9D9D9),
     required this.height,
   });
+
   final Color? color;
   final double height;
+
   @override
   Widget build(BuildContext context) {
     return Container(
       height: height,
-      width: 90,
+      width: context.screenWidth * 0.23,
       decoration: BoxDecoration(
         color: color,
         borderRadius: BorderRadius.circular(2),

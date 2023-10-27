@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:food_app/core/utils/app_router.dart';
 
 import '../../../../../core/utils/helper.dart';
 import 'custom_button_widget.dart';
@@ -11,7 +12,7 @@ class LoginViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+    return SingleChildScrollView(
       child: Padding(
         padding: const EdgeInsets.only(
           left: 12,
@@ -24,7 +25,7 @@ class LoginViewBody extends StatelessWidget {
             const LoginImageWidget(),
             const LoginDescription(),
             SizedBox(
-              height: context.screenHight * .086,
+              height: context.screenHight * .09,
             ),
             const CustomButton(
               buttonColor: Colors.blue,
@@ -51,10 +52,13 @@ class LoginViewBody extends StatelessWidget {
             SizedBox(
               height: context.screenHight * .019,
             ),
-            const CustomButton(
+            CustomButton(
+              onPressed: () => context.pushWithReplacmentNamed(
+                AppRouter.kHomeView,
+              ),
               buttonColor: Colors.black,
               textColor: Colors.white,
-              buttonIcon: Icon(
+              buttonIcon: const Icon(
                 Icons.email,
                 color: Colors.white,
                 size: 20,
