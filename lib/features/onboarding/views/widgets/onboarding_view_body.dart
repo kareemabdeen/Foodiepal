@@ -120,7 +120,7 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
                   );
                   if (currentPageNumber == 3) {
                     context.pushWithReplacmentNamed(
-                      AppRouter.kHomeView,
+                      AppRouter.kLoginPage,
                     );
                   }
                 },
