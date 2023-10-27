@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/features/Home/presentation/views/widgets/home_view_body.dart';
 
+import 'widgets/bottom_navigation_bar.dart';
+
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
@@ -8,6 +10,7 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: HomeViewBody(),
+      bottomNavigationBar: BuildNavigatorBar(),
     );
   }
 }

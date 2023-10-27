@@ -14,4 +14,9 @@ abstract class ItemsTextStyles {
       fontSize: 13,
       color: Colors.grey,
       fontWeight: FontWeight.w500);
+  static const TextStyle headerText24 = TextStyle(
+      fontFamily: 'Montserrat',
+      fontSize: 25,
+      color: Colors.black,
+      fontWeight: FontWeight.w600);
 }
