@@ -24,7 +24,7 @@ class _CustomCarouselSliderState extends State<CustomCarouselSlider> {
       children: [
         CarouselSlider(
           options: CarouselOptions(
-            height: 150,
+            height: 130,
             aspectRatio: 16 / 9,
             viewportFraction: 0.8,
             initialPage: 0,
@@ -39,8 +39,6 @@ class _CustomCarouselSliderState extends State<CustomCarouselSlider> {
             onPageChanged: (index, reason) {
               setState(() {
                 cIndex = index;
-                print("cIndex: $cIndex");
-                print("index: $index");
               });
             },
             scrollDirection: Axis.horizontal,
@@ -49,7 +47,7 @@ class _CustomCarouselSliderState extends State<CustomCarouselSlider> {
             return Builder(
               builder: (BuildContext context) {
                 return ClipRRect(
-                  borderRadius: BorderRadius.circular(25.0),
+                  borderRadius: BorderRadius.circular(17.0),
                   child: Container(
                     width: MediaQuery.of(context).size.width,
                     margin: const EdgeInsets.symmetric(horizontal: 5.0),
@@ -57,7 +55,7 @@ class _CustomCarouselSliderState extends State<CustomCarouselSlider> {
                       color: Colors.amber,
                     ),
                     child: Image.network(
-                      '$i',
+                      i,
                       fit: BoxFit.fill,
                     ),
                   ),
