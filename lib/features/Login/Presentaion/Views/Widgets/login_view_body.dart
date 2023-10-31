@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:food_app/core/utils/app_router.dart';
 
+import '../../../../../core/utils/app_router.dart';
 import '../../../../../core/utils/helper.dart';
 import 'custom_button_widget.dart';
 import 'login_description_widget.dart';
