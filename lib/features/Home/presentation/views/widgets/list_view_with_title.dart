@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/features/Home/presentation/views/widgets/resturant_listview_item.dart';
 
 import '../Styles/ItemsTextStyles.dart';
 
