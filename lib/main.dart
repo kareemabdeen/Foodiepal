@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/features/Home/presentation/views/home_view.dart';
-import 'package:food_app/features/onboarding/views/onboarding_view.dart';
+
+import 'features/Home/presentation/views/home_view.dart';
 
 void main() {
   runApp(const FoodApp());
