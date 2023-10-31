@@ -27,7 +27,6 @@ abstract class AppRouter {
                 if (snapshot.hasData) {
                   bool firstTimeForUser =
                       snapshot.data!.getBool('isItFirstTimeForUser') ?? true;
-
                   if (firstTimeForUser) {
                     return const OnBoardingView();
                   } else {
