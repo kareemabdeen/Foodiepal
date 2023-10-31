@@ -1,9 +1,4 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:food_app/core/utils/helper.dart';
-import 'package:food_app/features/Home/presentation/views/Styles/ItemsTextStyles.dart';
-import 'package:food_app/features/Home/presentation/views/widgets/resturant_details_widget.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import 'category_item_widget.dart';
 import 'custom_appBar.dart';
