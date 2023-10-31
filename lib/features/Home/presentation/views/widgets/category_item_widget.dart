@@ -13,7 +13,7 @@ class CategoryItemWidget extends StatelessWidget {
     return Container(
       height: context.screenHight * 0.17,
       width: context.screenWidth * 0.3,
-      margin: const EdgeInsets.all(5),
+      //margin: const EdgeInsets.all(5),
       padding: const EdgeInsets.only(top: 12, left: 14),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
