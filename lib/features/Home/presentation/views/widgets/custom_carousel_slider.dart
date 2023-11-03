@@ -1,7 +1,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:food_app/core/utils/helper.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+
+import '../../../../../core/utils/helper.dart';
 
 class CustomCarouselSlider extends StatefulWidget {
   const CustomCarouselSlider({super.key});

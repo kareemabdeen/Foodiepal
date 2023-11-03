@@ -14,7 +14,7 @@ class FoodApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      onGenerateRoute: AppRouter.onGenerateRoutes,
+      onGenerateRoute: AppRouter.onGenerateRoute,
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
