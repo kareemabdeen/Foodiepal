@@ -5,6 +5,8 @@ import 'package:food_app/features/Home/presentation/views/Styles/ItemsTextStyles
 import 'package:food_app/features/Home/presentation/views/widgets/resturant_details_widget.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
+import '../../../../../core/utils/app_router.dart';
+import '../../../../../core/utils/styles.dart';
 import 'category_item_widget.dart';
 import 'custom_appBar.dart';
 import 'custom_carousel_slider.dart';
@@ -17,19 +19,29 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView(
+    return SingleChildScrollView(
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 5),
-            child: CustomAppBar(),
+            padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 5),
+            child: CustomAppBar(
+              title: 'Deliver Now',
+              titleStyle: StylesManager.textStyle16
+                  .copyWith(color: Colors.black.withOpacity(0.5)),
+              subTitle: 'Hi guest',
+              subTitleStyle: StylesManager.textStyle30,
+              icon: Icons.person_outline,
+              iconFunction: () => context.pushWithReplacmentNamed(
+                AppRouter.kMenuPage,
+              ),
+            ),
           ),
-          Padding(
+          const Padding(
             padding: EdgeInsets.symmetric(horizontal: 15.0),
             child: CustomSearchTextField(),
           ),
-          Padding(
+          const Padding(
             padding: EdgeInsets.symmetric(vertical: 15.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -42,21 +54,21 @@ class HomeViewBody extends StatelessWidget {
               ],
             ),
           ),
-          Padding(
+          const Padding(
             padding: EdgeInsets.symmetric(vertical: 8.0),
             child: CustomCarouselSlider(),
           ),
-          ListViewWithTitle(
+          const ListViewWithTitle(
             listViewTitle: 'Best Offers',
             listViewWidget: ResturantListViewItem(),
           ),
-          SizedBox(height: 15),
-          ListViewWithTitle(
+          const SizedBox(height: 15),
+          const ListViewWithTitle(
             listViewTitle: 'Popular Restaurants',
             listViewWidget: ResturantListViewItem(),
           ),
-          SizedBox(height: 15),
-          ListViewWithTitle(
+          const SizedBox(height: 15),
+          const ListViewWithTitle(
             listViewTitle: 'Best To Dine-In',
             listViewWidget: ResturantListViewItem(),
           ),

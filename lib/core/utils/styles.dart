@@ -35,11 +35,11 @@ abstract class StylesManager {
   );
   static const textStyle18 = TextStyle(
     fontSize: 18,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w500,
   );
   static const textStyle20 = TextStyle(
     fontSize: 20,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w500,
   );
   static final textStyle30 = TextStyle(
     fontSize: 30,
