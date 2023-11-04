@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 import '../utils/helper.dart';
 
 class GeneralButton extends StatelessWidget {
-  const GeneralButton({super.key, this.onPressed});
+  const GeneralButton({super.key, this.onPressed, required this.text});
   final void Function()? onPressed;
+  final String text;
+
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
@@ -18,16 +20,16 @@ class GeneralButton extends StatelessWidget {
         ),
       ),
       color: Colors.black,
-      child: const Row(
+      child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
           Text(
-            'Next  ',
-            style: TextStyle(
+            text,
+            style: const TextStyle(
               fontSize: 15,
             ),
           ),
-          Icon(
+          const Icon(
             Icons.arrow_forward,
             size: 13,
           ),
