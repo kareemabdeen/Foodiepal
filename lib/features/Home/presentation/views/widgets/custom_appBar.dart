@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/utils/styles.dart';
-
 class CustomAppBar extends StatelessWidget {
   final String title;
   final String subTitle;
@@ -18,7 +16,8 @@ class CustomAppBar extends StatelessWidget {
     required this.subTitle,
     required this.subTitleStyle,
     required this.icon,
-    this.iconSize, required this.iconFunction,
+    this.iconSize,
+    required this.iconFunction,
   });
 
   @override

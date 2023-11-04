@@ -110,12 +110,13 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
                 height: context.screenHight * .055,
               ),
               GeneralButton(
+                text: (currentPageNumber == 3) ? 'Get Started  ' : 'Next  ',
                 onPressed: () {
                   pageController.nextPage(
                     duration: const Duration(
                       milliseconds: 500,
                     ),
-                    curve: Curves.easeInCirc,
+                    curve: Curves.easeInOutSine,
                   );
                   if (currentPageNumber == 3) {
                     context.pushWithReplacmentNamed(
@@ -127,17 +128,20 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
               SizedBox(
                 height: context.screenHight * .015,
               ),
-              InkWell(
-                onTap: () {},
-                child: const Text(
-                  'Skip',
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontWeight: FontWeight.w800,
-                    fontSize: 16,
-                  ),
-                ),
-              ),
+
+              (currentPageNumber != 3)
+                  ? InkWell(
+                      onTap: () {},
+                      child: const Text(
+                        'Skip',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.w800,
+                          fontSize: 16,
+                        ),
+                      ),
+                    )
+                  : const SizedBox.shrink(),
             ],
           ),
         );
