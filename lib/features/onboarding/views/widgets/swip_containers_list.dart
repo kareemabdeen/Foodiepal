@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/core/utils/helper.dart';
 
 import 'custom_swipe_container_widget.dart';
 
@@ -22,7 +21,7 @@ class CustomSwipeContainersList extends StatelessWidget {
         (index) {
           return CustomSwipeContainer(
             height: index == currentPageNumber ? 3.9 : 3.36,
-            color: index == currentPageNumber
+            color: currentPageNumber >= index
                 ? Colors.black
                 : const Color(
                     0xffDADADA,

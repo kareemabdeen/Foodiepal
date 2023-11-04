@@ -1,10 +1,23 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/utils/styles.dart';
-
 class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({
+  final String title;
+  final String subTitle;
+  final TextStyle titleStyle;
+  final TextStyle subTitleStyle;
+  final IconData icon;
+  double? iconSize = 25;
+  final Function() iconFunction;
+
+  CustomAppBar({
     super.key,
+    required this.title,
+    required this.titleStyle,
+    required this.subTitle,
+    required this.subTitleStyle,
+    required this.icon,
+    this.iconSize,
+    required this.iconFunction,
   });
 
   @override
@@ -17,13 +30,12 @@ class CustomAppBar extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Deliver Now',
-              style: StylesManager.textStyle16
-                  .copyWith(color: Colors.black.withOpacity(0.5)),
+              title,
+              style: titleStyle,
             ),
             Text(
-              'Hi guest',
-              style: StylesManager.textStyle30,
+              subTitle,
+              style: subTitleStyle,
             ),
           ],
         ),
@@ -31,11 +43,12 @@ class CustomAppBar extends StatelessWidget {
           borderRadius: BorderRadius.circular(50),
           color: Colors.grey.shade200,
           child: IconButton(
-            icon: const Icon(
-              Icons.person_outline,
+            icon: Icon(
+              icon,
               color: Colors.black,
+              size: iconSize,
             ),
-            onPressed: () {},
+            onPressed: iconFunction,
           ),
         ),
       ],
