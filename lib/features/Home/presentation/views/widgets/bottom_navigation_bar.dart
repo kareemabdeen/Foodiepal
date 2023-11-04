@@ -39,8 +39,8 @@ class _BuildNavigatorBarState extends State<BuildNavigatorBar> {
           label: 'Food',
         ),
         NavigationDestination(
-          selectedIcon: Icon(Icons.dining_outlined),
-          icon: Icon(Icons.dining),
+          selectedIcon: Icon(Icons.dining),
+          icon: Icon(Icons.dining_outlined),
           label: 'Dine In',
         ),
       ],

@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/core/utils/helper.dart';
 import 'package:food_app/features/Home/presentation/views/widgets/custom_appBar.dart';
-import 'package:food_app/features/Login/Presentaion/Views/Widgets/custom_button_widget.dart';
-import 'package:food_app/features/menu/prsentation/views/widgets/custom_menu_button.dart';
 
-import '../../../../../constant.dart';
 import '../../../../../core/utils/styles.dart';
 import 'custom_menu_sign_up_reminder.dart';
 import 'menu_buttons_list.dart';
@@ -44,17 +40,6 @@ class MenuViewBody extends StatelessWidget {
           padding: EdgeInsets.only(top: 12.0, right: 12, left: 12),
           child: SignUpReminder(),
         ),
-        /*ElevatedButton(
-          onPressed: () {},
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Icon(Icons.person),
-              Text('My Account'),
-              Icon(Icons.arrow_forward_ios),
-            ],
-          ),
-        ),*/
         const Padding(
           padding: EdgeInsets.all(15.0),
           child: MenuButtonsList(),

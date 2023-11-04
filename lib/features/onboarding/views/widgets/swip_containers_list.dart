@@ -21,7 +21,7 @@ class CustomSwipeContainersList extends StatelessWidget {
         (index) {
           return CustomSwipeContainer(
             height: index == currentPageNumber ? 3.9 : 3.36,
-            color: index == currentPageNumber
+            color: currentPageNumber >= index
                 ? Colors.black
                 : const Color(
                     0xffDADADA,

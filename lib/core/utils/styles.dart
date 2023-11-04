@@ -3,21 +3,21 @@ import 'package:flutter/material.dart';
 abstract class StylesManager {
 //on boarding assets
 
-  static final TextStyle textStyle32 = const TextStyle(
+  static const TextStyle textStyle32 = TextStyle(
     fontFamily: 'Montserrat',
     fontWeight: FontWeight.bold,
     fontSize: 32,
     color: Colors.white,
   );
 
-  static final TextStyle textStyle24 = const TextStyle(
+  static const TextStyle textStyle24 = TextStyle(
     fontFamily: 'Montserrat',
     fontWeight: FontWeight.w600,
     fontSize: 24,
     color: Colors.white,
   );
 
-  static final TextStyle textStyle16 = const TextStyle(
+  static const TextStyle textStyle16 = TextStyle(
     fontFamily: 'Montserrat',
     fontWeight: FontWeight.w400,
     fontSize: 16,
@@ -41,10 +41,15 @@ abstract class StylesManager {
     fontSize: 20,
     fontWeight: FontWeight.w500,
   );
-  static final textStyle30 = TextStyle(
+  static const textStyle30 = TextStyle(
     fontSize: 30,
     fontWeight: FontWeight.w900,
     letterSpacing: 1.2,
+  );
+
+  static const textStyle26 = TextStyle(
+    fontSize: 26,
+    fontWeight: FontWeight.w900,
   );
   static const textStyle14 = TextStyle(
     fontSize: 14,
