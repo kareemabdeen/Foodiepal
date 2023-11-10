@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:food_app/core/utils/app_router.dart';
-import 'package:food_app/features/onboarding/views/onboarding_view.dart';
+
+import 'core/utils/app_router.dart';
+import 'features/Home/Presentation/views/home_view.dart';
 
 void main() {
   runApp(const FoodApp());
@@ -18,12 +19,15 @@ class FoodApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        navigationBarTheme: const NavigationBarThemeData(
+          shadowColor: Colors.grey,
+        ),
+        primaryColor: const Color(0xffFFFFFF),
         bottomNavigationBarTheme: const BottomNavigationBarThemeData(
           backgroundColor: Colors.white,
-          elevation: 0,
-          selectedIconTheme: IconThemeData(color: Colors.transparent),
+          selectedItemColor: Colors.white,
+          selectedIconTheme: IconThemeData(color: Colors.white),
+          showSelectedLabels: true,
         ),
       ),
       home: const AnnotatedRegion<SystemUiOverlayStyle>(
@@ -31,9 +35,8 @@ class FoodApp extends StatelessWidget {
           statusBarIconBrightness: Brightness.dark,
           statusBarColor: Colors.transparent,
         ),
-        child: OnBoardingView(),
+        child: HomeView(),
       ),
     );
   }
-
 }

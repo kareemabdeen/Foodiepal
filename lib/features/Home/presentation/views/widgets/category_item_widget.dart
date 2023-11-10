@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/core/utils/app_router.dart';
 
+import '../../../../../core/utils/app_router.dart';
 import '../../../../../core/utils/helper.dart';
 import '../Styles/ItemsTextStyles.dart';
 
-class CategoryItemWidget extends StatelessWidget {
-  const CategoryItemWidget({super.key});
+class CategoryItem extends StatelessWidget {
+  const CategoryItem({super.key});
 
   @override
   Widget build(BuildContext context) {

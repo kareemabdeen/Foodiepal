@@ -24,7 +24,7 @@ class ResturantImageWidget extends StatelessWidget {
       ),
       child: const Align(
         alignment: Alignment.topRight,
-        child: FavCircularButtonWidget(),
+        child: FavCircularButton(),
       ),
     );
   }

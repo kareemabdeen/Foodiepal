@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/core/utils/helper.dart';
 
 import '../../../../../core/utils/app_router.dart';
+import '../../../../../core/utils/helper.dart';
 import '../../../../../core/utils/styles.dart';
 import 'category_item_widget.dart';
 import 'custom_appBar.dart';
@@ -29,24 +29,33 @@ class HomeViewBody extends StatelessWidget {
               subTitleStyle: StylesManager.textStyle30,
               icon: Icons.person_outline,
               iconFunction: () => context.pushWithReplacmentNamed(
-                AppRouter.kMenuPage,
+                AppRouter
+                    .kMenuPage, // Todo:  recheck name on these page => meeting
               ),
             ),
           ),
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 15.0),
-            child: CustomSearchTextField(),
+          SizedBox(
+            height: 56,
+            width: context.screenWidth,
+            child: const Padding(
+              padding: EdgeInsets.symmetric(
+                horizontal: 15.0,
+              ),
+              child: CustomSearchTextField(
+                borderRadius: 26,
+              ),
+            ),
           ),
           const Padding(
             padding: EdgeInsets.symmetric(vertical: 15.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                CategoryItemWidget(),
+                CategoryItem(),
                 SizedBox(width: 10),
-                CategoryItemWidget(),
+                CategoryItem(),
                 SizedBox(width: 10),
-                CategoryItemWidget(),
+                CategoryItem(),
               ],
             ),
           ),
@@ -56,17 +65,23 @@ class HomeViewBody extends StatelessWidget {
           ),
           const ListViewWithTitle(
             listViewTitle: 'Best Offers',
+            scrollDirection: Axis.horizontal,
             listViewWidget: ResturantListViewItem(),
+            physics: BouncingScrollPhysics(),
           ),
           const SizedBox(height: 15),
           const ListViewWithTitle(
+            scrollDirection: Axis.horizontal,
             listViewTitle: 'Popular Restaurants',
             listViewWidget: ResturantListViewItem(),
+            physics: BouncingScrollPhysics(),
           ),
           const SizedBox(height: 15),
           const ListViewWithTitle(
+            scrollDirection: Axis.horizontal,
             listViewTitle: 'Best To Dine-In',
             listViewWidget: ResturantListViewItem(),
+            physics: BouncingScrollPhysics(),
           ),
         ],
       ),

@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/core/utils/styles.dart';
-import 'package:food_app/features/Offers/presention/Views/Widgets/filters_listview_item_widget.dart';
+
+import '../../../../../core/utils/styles.dart';
+import 'filters_listview_item_widget.dart';
 
 class FiltersListView extends StatelessWidget {
   FiltersListView({super.key});
 
-  List<Widget> filters = [
+  final List<Widget> filters = [
     const Icon(Icons.tune_outlined),
     Text("Sort By",
         style: StylesManager.textStyle14.copyWith(color: Colors.black)),

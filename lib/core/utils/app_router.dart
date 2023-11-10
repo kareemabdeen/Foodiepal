@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/features/Login/Presentaion/Views/login_view.dart';
-import 'package:food_app/features/Offers/presention/Views/offers_view.dart';
-import 'package:food_app/features/menu/prsentation/views/menu_view.dart';
-import 'package:food_app/features/onboarding/views/onboarding_view.dart';
 
 import '../../Features/Home/presentation/views/home_view.dart';
+import '../../features/Home/Presentation/views/search_view.dart';
+import '../../features/Login/Presentaion/Views/login_view.dart';
+import '../../features/Offers/presention/Views/offers_view.dart';
+import '../../features/menu/prsentation/views/menu_view.dart';
+import '../../features/onboarding/views/onboarding_view.dart';
 
 abstract class AppRouter {
   static const konBoardingView = '/';
   static const kHomeView = '/HomeView';
   static const kLoginPage = '/LoginPage';
+  static const kSearchPage = '/searchPage';
 
   static const kOffersView = '/OffersView';
 
@@ -32,6 +34,9 @@ abstract class AppRouter {
 
       case kMenuPage:
         return MaterialPageRoute(builder: (context) => const MenuView());
+
+      case kSearchPage:
+        return MaterialPageRoute(builder: (context) => const SearchView());
     }
     return null;
   }

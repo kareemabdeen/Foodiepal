@@ -5,17 +5,33 @@ extension MediaQueryHelper on BuildContext {
   double get screenWidth => MediaQuery.of(this).size.width;
 } // to access it context.screenHeight * n
 
+// context.simplePush(HomePage());
 extension NavigatorHelper on BuildContext {
   void simplePush(Widget widget) {
     Navigator.of(this).push(
       MaterialPageRoute(builder: (context) => widget),
     );
   }
-} // context.simplePush(HomePage());
 
-// Navigator.pushReplacementNamed(context, kHomeView);
-extension NavigatorHelper2 on BuildContext {
+  void simplePop() {
+    Navigator.of(this).pop();
+  }
+
+  void simplePushReplacement(Widget widget) {
+    Navigator.of(this).pushReplacement(
+      MaterialPageRoute(builder: (context) => widget),
+    );
+  }
+
+  void simplePushAndRemoveUntil(Widget widget) {
+    Navigator.of(this).pushAndRemoveUntil(
+      MaterialPageRoute(builder: (context) => widget),
+      (Route<dynamic> route) => false,
+    );
+  }
+
   void pushWithReplacmentNamed(String widgetName) {
     Navigator.pushReplacementNamed(this, widgetName);
   }
 }
+// Navigator.pushReplacementNamed(context, kHomeView);

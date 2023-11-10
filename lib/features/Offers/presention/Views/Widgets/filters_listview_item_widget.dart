@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/core/utils/styles.dart';
 
 class FiltersListViewItem extends StatelessWidget {
   const FiltersListViewItem({super.key, required this.child});

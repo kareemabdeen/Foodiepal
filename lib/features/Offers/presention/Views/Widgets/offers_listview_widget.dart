@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/features/Offers/presention/Views/Widgets/offers_listview_item_widget.dart';
+
+import 'offers_listview_item_widget.dart';
 
 class OffersListView extends StatelessWidget {
   const OffersListView({super.key});

@@ -20,7 +20,15 @@ class _BuildNavigatorBarState extends State<BuildNavigatorBar> {
   @override
   Widget build(BuildContext context) {
     return NavigationBar(
-      backgroundColor: const Color(0xffFFFFFF),
+      indicatorColor: Colors.transparent,
+      backgroundColor: Colors.white,
+      elevation: 0,
+      shadowColor: Theme.of(context).navigationBarTheme.shadowColor,
+      indicatorShape: ShapeBorder.lerp(
+        const StadiumBorder(side: BorderSide.none),
+        const StadiumBorder(side: BorderSide.none),
+        2.3,
+      ),
       selectedIndex: currentPageIndex!,
       onDestinationSelected: (slectedIndex) {
         setState(() {

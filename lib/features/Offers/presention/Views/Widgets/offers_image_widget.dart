@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/core/utils/helper.dart';
-import 'package:food_app/features/Home/presentation/views/widgets/fav_cirular_button_widget.dart';
+
+import '../../../../../core/utils/assets.dart';
+import '../../../../../core/utils/helper.dart';
+import '../../../../Home/Presentation/views/widgets/fav_cirular_button_widget.dart';
 
 class OffersImageWidget extends StatelessWidget {
   const OffersImageWidget({super.key});
@@ -16,13 +18,13 @@ class OffersImageWidget extends StatelessWidget {
         image: const DecorationImage(
           fit: BoxFit.cover,
           image: AssetImage(
-            "assets/images/food.jpg",
+            Assets.imagesFood,
           ),
         ),
       ),
       child: const Align(
         alignment: Alignment.topRight,
-        child: FavCircularButtonWidget(),
+        child: FavCircularButton(),
       ),
     );
   }
