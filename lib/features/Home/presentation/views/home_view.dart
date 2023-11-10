@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/features/Home/presentation/views/widgets/home_view_body.dart';
 
+import '../../presentation/views/widgets/home_view_body.dart';
 import 'widgets/bottom_navigation_bar.dart';
 
 class HomeView extends StatelessWidget {
@@ -8,9 +8,9 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SafeArea(child: HomeViewBody()),
-      bottomNavigationBar: BuildNavigatorBar(),
+      bottomNavigationBar: const BuildNavigatorBar(),
     );
   }
 }

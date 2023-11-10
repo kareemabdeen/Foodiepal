@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/core/utils/helper.dart';
 
 import '../../../../../constant.dart';
+import '../../../../../core/utils/helper.dart';
 import '../../../../../core/utils/styles.dart';
 
 class SignUpReminder extends StatelessWidget {

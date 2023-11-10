@@ -1,22 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class CustomSearchTextField extends StatelessWidget {
   const CustomSearchTextField({
     super.key,
+    required this.borderRadius,
   });
 
+  final double borderRadius;
   @override
   Widget build(BuildContext context) {
     return TextField(
+      onTapOutside: (event) => FocusManager.instance.primaryFocus?.unfocus(),
       decoration: InputDecoration(
+          contentPadding: const EdgeInsets.symmetric(horizontal: 15),
           enabledBorder: buildOutlineInputBorder(),
           focusedBorder: buildOutlineInputBorder(),
-          hintText: 'Search for food, grocery, meat etc.',
+          hintText: 'Search for food, grocery, meat etc',
           hintStyle: const TextStyle(color: Colors.black26),
           filled: true,
-          fillColor: Colors.black.withOpacity(0.05),
+          fillColor: Colors.black.withOpacity(0.026),
           prefixIcon: IconButton(
-            icon: const Icon(Icons.search_sharp),
+            icon: const Icon(FontAwesomeIcons.magnifyingGlass, size: 20),
             onPressed: () {},
           ),
           suffixIcon: IntrinsicHeight(
@@ -35,7 +40,8 @@ class CustomSearchTextField extends StatelessWidget {
                   ),
                   GestureDetector(
                     onTap: () {},
-                    child: const Icon(Icons.filter_list_alt),
+                    child: const Icon(Icons
+                        .tune), // Todo: will be changed to an image in material io => imageName: Discover_tune
                   ),
                 ],
               ),
@@ -46,7 +52,7 @@ class CustomSearchTextField extends StatelessWidget {
 
   OutlineInputBorder buildOutlineInputBorder() {
     return OutlineInputBorder(
-      borderRadius: BorderRadius.circular(26),
+      borderRadius: BorderRadius.circular(borderRadius),
       borderSide: const BorderSide(color: Colors.white),
     );
   }

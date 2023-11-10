@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class FavCircularButtonWidget extends StatelessWidget {
-  const FavCircularButtonWidget({super.key});
+class FavCircularButton extends StatelessWidget {
+  const FavCircularButton({super.key});
 
   @override
   Widget build(BuildContext context) {

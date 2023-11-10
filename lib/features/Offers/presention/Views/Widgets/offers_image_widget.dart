@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
 
+import '../../../../../core/utils/assets.dart';
 import '../../../../../core/utils/helper.dart';
-import 'fav_cirular_button_widget.dart';
+import '../../../../Home/Presentation/views/widgets/fav_cirular_button_widget.dart';
 
-class ResturantImageWidget extends StatelessWidget {
-  const ResturantImageWidget({super.key});
+class OffersImageWidget extends StatelessWidget {
+  const OffersImageWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
-    double containerWidth = context.screenWidth * 0.35;
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 8),
-      height: containerWidth * 1.1,
-      width: context.screenWidth * 0.35,
+      height: context.screenWidth * 0.45,
+      width: context.screenWidth,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8),
         image: const DecorationImage(
           fit: BoxFit.cover,
           image: AssetImage(
-            "assets/images/food.jpg",
+            Assets.imagesFood,
           ),
         ),
       ),

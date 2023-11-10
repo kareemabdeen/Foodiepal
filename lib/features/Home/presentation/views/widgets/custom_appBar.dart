@@ -6,17 +6,17 @@ class CustomAppBar extends StatelessWidget {
   final TextStyle titleStyle;
   final TextStyle subTitleStyle;
   final IconData icon;
-  double? iconSize = 25;
+  final double iconSize;
   final Function() iconFunction;
 
-  CustomAppBar({
+  const CustomAppBar({
     super.key,
     required this.title,
     required this.titleStyle,
     required this.subTitle,
     required this.subTitleStyle,
     required this.icon,
-    this.iconSize,
+    this.iconSize = 25,
     required this.iconFunction,
   });
 

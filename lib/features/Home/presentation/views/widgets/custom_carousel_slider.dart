@@ -46,26 +46,29 @@ class _CustomCarouselSliderState extends State<CustomCarouselSlider> {
             },
             scrollDirection: Axis.horizontal,
           ),
-          items: carousalImages.map((image) {
-            return Builder(
-              builder: (BuildContext context) {
-                return ClipRRect(
-                  borderRadius: BorderRadius.circular(17.0),
-                  child: Container(
-                    width: context.screenWidth,
-                    margin: const EdgeInsets.symmetric(horizontal: 5.0),
-                    decoration: const BoxDecoration(
-                      color: Colors.amber,
+          items: carousalImages.map(
+            (image) {
+              return Builder(
+                builder: (BuildContext context) {
+                  return ClipRRect(
+                    borderRadius: BorderRadius.circular(17.0),
+                    child: Container(
+                      width: context.screenWidth,
+                      margin: const EdgeInsets.symmetric(horizontal: 5.0),
+                      decoration: const BoxDecoration(
+                        color: Colors.amber,
+                      ),
+                      child: CachedNetworkImage(
+                        // using it instead of image.network solved the error of handShake exception
+                        imageUrl: image,
+                        fit: BoxFit.fill,
+                      ),
                     ),
-                    child: CachedNetworkImage(
-                      imageUrl: image,
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                );
-              },
-            );
-          }).toList(),
+                  );
+                },
+              );
+            },
+          ).toList(),
         ),
         Padding(
           padding: const EdgeInsets.all(10.0),
