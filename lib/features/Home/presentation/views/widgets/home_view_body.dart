@@ -4,7 +4,7 @@ import '../../../../../core/utils/app_router.dart';
 import '../../../../../core/utils/helper.dart';
 import '../../../../../core/utils/styles.dart';
 import 'category_item_widget.dart';
-import 'custom_appBar.dart';
+import 'custom_appbar.dart';
 import 'custom_carousel_slider.dart';
 import 'custom_search_text_field.dart';
 import 'list_view_with_title.dart';
