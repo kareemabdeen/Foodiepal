@@ -5,17 +5,23 @@ class CustomSearchTextField extends StatelessWidget {
   const CustomSearchTextField({
     super.key,
     required this.borderRadius,
+    this.enabled = true, // because this is the ordinary case of the textfiled
   });
 
   final double borderRadius;
+  final bool enabled;
+
   @override
   Widget build(BuildContext context) {
     return TextField(
+      enabled: enabled,
       onTapOutside: (event) => FocusManager.instance.primaryFocus?.unfocus(),
       decoration: InputDecoration(
-          contentPadding: const EdgeInsets.symmetric(horizontal: 15),
+          contentPadding:
+              const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
           enabledBorder: buildOutlineInputBorder(),
           focusedBorder: buildOutlineInputBorder(),
+          border: InputBorder.none,
           hintText: 'Search for food, grocery, meat etc',
           hintStyle: const TextStyle(color: Colors.black26),
           filled: true,

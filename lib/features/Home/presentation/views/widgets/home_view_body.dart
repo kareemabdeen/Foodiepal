@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../../core/utils/app_router.dart';
 import '../../../../../core/utils/helper.dart';
 import '../../../../../core/utils/styles.dart';
+import '../search_view.dart';
 import 'category_item_widget.dart';
 import 'custom_appbar.dart';
 import 'custom_carousel_slider.dart';
@@ -37,12 +38,17 @@ class HomeViewBody extends StatelessWidget {
           SizedBox(
             height: 56,
             width: context.screenWidth,
-            child: const Padding(
-              padding: EdgeInsets.symmetric(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(
                 horizontal: 15.0,
               ),
-              child: CustomSearchTextField(
-                borderRadius: 26,
+              child: InkWell(
+                onTap: () => context.simplePush(
+                    const SearchView()), // todo: change it later to appRouter.Widgetname to use onGenerateRoute
+                child: const CustomSearchTextField(
+                  borderRadius: 26,
+                  enabled: false,
+                ),
               ),
             ),
           ),
