@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:food_app/core/services/dependency_injection.dart';
 import 'package:food_app/features/Splash/prsentation/views/splash_view.dart';
 
 import 'core/database/cache/cach_helper.dart';
@@ -7,7 +8,8 @@ import 'core/utils/app_router.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await CacheHelper().init();
+  setupDependecyInjection();
+  await getIt<CacheHelper>().init();
 
   runApp(const FoodApp());
 }
