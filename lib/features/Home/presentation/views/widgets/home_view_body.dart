@@ -68,26 +68,30 @@ class HomeViewBody extends StatelessWidget {
           const Padding(
             padding: EdgeInsets.symmetric(vertical: 8.0),
             child: CustomCarouselSlider(),
+
           ),
-          const ListViewWithTitle(
+          ListViewWithTitle(
+            listViewHeight: context.screenHight * 0.29,
             listViewTitle: 'Best Offers',
             scrollDirection: Axis.horizontal,
-            listViewWidget: ResturantListViewItem(),
-            physics: BouncingScrollPhysics(),
+            listViewWidget: const ResturantListViewItem(),
+            physics: const BouncingScrollPhysics(),
           ),
           const SizedBox(height: 15),
-          const ListViewWithTitle(
+          ListViewWithTitle(
+            listViewHeight: context.screenHight * 0.29,
             scrollDirection: Axis.horizontal,
             listViewTitle: 'Popular Restaurants',
-            listViewWidget: ResturantListViewItem(),
-            physics: BouncingScrollPhysics(),
+            listViewWidget: const ResturantListViewItem(),
+            physics: const BouncingScrollPhysics(),
           ),
           const SizedBox(height: 15),
-          const ListViewWithTitle(
+          ListViewWithTitle(
+            listViewHeight: context.screenHight * 0.29,
             scrollDirection: Axis.horizontal,
             listViewTitle: 'Best To Dine-In',
-            listViewWidget: ResturantListViewItem(),
-            physics: BouncingScrollPhysics(),
+            listViewWidget: const ResturantListViewItem(),
+            physics: const BouncingScrollPhysics(),
           ),
         ],
       ),

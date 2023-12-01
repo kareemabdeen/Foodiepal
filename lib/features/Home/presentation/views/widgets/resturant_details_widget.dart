@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../Styles/ItemsTextStyles.dart';
 import 'resturant_rating_distance_widget.dart';
 
-class ResturantDetailsWidget extends StatelessWidget {
-  const ResturantDetailsWidget({super.key});
+class RestaurantDetailsWidget extends StatelessWidget {
+  const RestaurantDetailsWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
