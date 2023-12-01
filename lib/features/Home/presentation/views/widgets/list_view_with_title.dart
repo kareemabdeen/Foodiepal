@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/core/utils/helper.dart';
 
 import '../Styles/ItemsTextStyles.dart';
 
@@ -40,10 +41,10 @@ class ListViewWithTitle extends StatelessWidget {
               scrollDirection: scrollDirection,
               // shrinkWrap: true,
               itemCount: 20,
-              // Todo : there was an problem when the item count increase in its value
+
               itemBuilder: (context, index) {
                 return Padding(
-                  padding: const EdgeInsets.only(right: 5.0),
+                  padding: EdgeInsets.only(right: context.screenWidth * .02),
                   child: listViewWidget,
                 );
               },

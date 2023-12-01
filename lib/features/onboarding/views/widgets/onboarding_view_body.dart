@@ -115,8 +115,7 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
               GeneralButton(
                 text: (currentPageNumber == 3) ? 'Get Started  ' : 'Next  ',
                 onPressed: () {
-                  getIt<CacheHelper>()
-                      .saveData(key: isOnBoardingvisited, value: true);
+                  onboardingVisited();
                   navigateToNextPage();
                   if (currentPageNumber == 3) {
                     context.pushWithReplacmentNamed(
@@ -128,7 +127,7 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
               SizedBox(
                 height: context.screenHight * .015,
               ),
-
+              //? are we need here to call onboardingVisited ? or not
               (currentPageNumber != 3)
                   ? InkWell(
                       onTap: () {},
@@ -147,6 +146,10 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
         );
       },
     );
+  }
+
+  void onboardingVisited() {
+    getIt<CacheHelper>().saveData(key: isOnBoardingvisited, value: true);
   }
 
   void navigateToNextPage() {
