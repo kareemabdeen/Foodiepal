@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/constant.dart';
+import 'package:food_app/core/database/cache/cach_helper.dart';
 
 import '../../../../core/utils/app_router.dart';
 import '../../../../core/utils/helper.dart';
@@ -112,6 +114,7 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
               GeneralButton(
                 text: (currentPageNumber == 3) ? 'Get Started  ' : 'Next  ',
                 onPressed: () {
+                  //Todo : refactor this method later
                   pageController.nextPage(
                     duration: const Duration(
                       milliseconds: 500,
@@ -123,6 +126,7 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
                       AppRouter.kLoginPage,
                     );
                   }
+                  CacheHelper().saveData(key: isOnBoardingvisited, value: true);
                 },
               ),
               SizedBox(

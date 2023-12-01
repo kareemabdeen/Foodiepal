@@ -36,6 +36,7 @@ dependencies:
     sdk: flutter
   flutter_bloc: ^8.1.3
   font_awesome_flutter: ^10.6.0
+  lottie: ^2.7.0
   shared_preferences: ^2.2.2
   smooth_page_indicator: null
 
