@@ -10,7 +10,7 @@ class ResturantImageWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     double containerWidth = context.screenWidth * 0.35;
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: 8),
+      //margin: const EdgeInsets.symmetric(vertical: 8),
       height: containerWidth * 1.1,
       width: context.screenWidth * 0.35,
       decoration: BoxDecoration(
