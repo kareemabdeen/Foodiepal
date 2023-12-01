@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/features/Offers/presention/Views/Widgets/offers_view_appbar.dart';
 
 import '../../../../../core/utils/styles.dart';
 import '../../../../Home/presentation/views/widgets/custom_appBar.dart';
@@ -13,15 +14,12 @@ class MenuViewBody extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15.0),
-          child: IconButton(
-            icon: const Icon(
-              Icons.arrow_back_ios,
-              size: 30,
-            ),
-            onPressed: () => Navigator.of(context).pop(),
+        const Padding(
+          padding: EdgeInsets.symmetric(
+            horizontal: 15.0,
+            vertical: 10,
           ),
+          child: OffersViewAppBar(),
         ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15.0),
