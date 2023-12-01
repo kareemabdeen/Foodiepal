@@ -31,7 +31,6 @@ class HomeViewBody extends StatelessWidget {
               subTitleStyle: StylesManager.textStyle30,
               icon: Icons.person_outline,
               iconFunction: () => context.simplePush(
-
                 const MenuView(), // Todo:  recheck name on these page => meeting
               ),
             ),
@@ -69,6 +68,7 @@ class HomeViewBody extends StatelessWidget {
           const Padding(
             padding: EdgeInsets.symmetric(vertical: 8.0),
             child: CustomCarouselSlider(),
+
           ),
           ListViewWithTitle(
             listViewHeight: context.screenHight * 0.29,
