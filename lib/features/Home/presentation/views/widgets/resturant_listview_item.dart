@@ -13,7 +13,7 @@ class ResturantListViewItem extends StatelessWidget {
       children: [
         ResturantImageWidget(),
         SizedBox(height: 5),
-        ResturantDetailsWidget(),
+        RestaurantDetailsWidget(),
       ],
     );
   }
