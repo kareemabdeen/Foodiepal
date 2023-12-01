@@ -11,6 +11,7 @@ class ResturantListViewItem extends StatelessWidget {
     return const Column(
       children: [
         ResturantImageWidget(),
+        SizedBox(height: 5),
         ResturantDetailsWidget(),
       ],
     );

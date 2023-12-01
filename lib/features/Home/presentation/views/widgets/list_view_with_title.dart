@@ -16,14 +16,14 @@ class ListViewWithTitle extends StatelessWidget {
     required this.listViewWidget,
     required this.scrollDirection,
     required this.physics,
-    this.listViewHeight = 240, // 240
+    this.listViewHeight = 215, // 240
   });
 
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      mainAxisSize: MainAxisSize.max, // min
+      mainAxisSize: MainAxisSize.min, // min
       children: [
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15.0),
@@ -33,18 +33,17 @@ class ListViewWithTitle extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 8.0),
+          padding: const EdgeInsets.only(top: 8.0, right: 15, left: 15),
           child: SizedBox(
             height: listViewHeight,
             child: ListView.builder(
               physics: physics,
               scrollDirection: scrollDirection,
-              // shrinkWrap: true,
+              //shrinkWrap: true,
               itemCount: 20,
-
               itemBuilder: (context, index) {
                 return Padding(
-                  padding: EdgeInsets.only(right: context.screenWidth * .02),
+                  padding: EdgeInsets.only(right: 8),
                   child: listViewWidget,
                 );
               },
