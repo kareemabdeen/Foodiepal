@@ -31,6 +31,7 @@ class HomeViewBody extends StatelessWidget {
               subTitleStyle: StylesManager.textStyle30,
               icon: Icons.person_outline,
               iconFunction: () => context.simplePush(
+
                 const MenuView(), // Todo:  recheck name on these page => meeting
               ),
             ),
