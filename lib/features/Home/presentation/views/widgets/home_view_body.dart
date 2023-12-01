@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/features/menu/prsentation/views/menu_view.dart';
 
 import '../../../../../core/utils/app_router.dart';
 import '../../../../../core/utils/helper.dart';
@@ -29,9 +30,8 @@ class HomeViewBody extends StatelessWidget {
               subTitle: 'Hi guest',
               subTitleStyle: StylesManager.textStyle30,
               icon: Icons.person_outline,
-              iconFunction: () => context.pushWithReplacmentNamed(
-                AppRouter
-                    .kMenuPage, // Todo:  recheck name on these page => meeting
+              iconFunction: () => context.simplePush(
+                const MenuView(), // Todo:  recheck name on these page => meeting
               ),
             ),
           ),
@@ -43,8 +43,8 @@ class HomeViewBody extends StatelessWidget {
                 horizontal: 15.0,
               ),
               child: InkWell(
-                onTap: () => context.simplePush(
-                    const SearchView()), // todo: change it later to appRouter.Widgetname to use onGenerateRoute
+                onTap: () => context.simplePush(const SearchView()),
+                // todo: change it later to appRouter.Widgetname to use onGenerateRoute
                 child: const CustomSearchTextField(
                   borderRadius: 26,
                   enabled: false,

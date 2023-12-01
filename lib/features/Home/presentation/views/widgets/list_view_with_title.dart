@@ -8,6 +8,7 @@ class ListViewWithTitle extends StatelessWidget {
   final Axis scrollDirection;
   final ScrollPhysics physics;
   final double listViewHeight;
+
   const ListViewWithTitle({
     super.key,
     required this.listViewTitle,
@@ -38,10 +39,13 @@ class ListViewWithTitle extends StatelessWidget {
               physics: physics,
               scrollDirection: scrollDirection,
               // shrinkWrap: true,
-              itemCount:
-                  20, // Todo : there was an problem when the item count increase in its value
+              itemCount: 20,
+              // Todo : there was an problem when the item count increase in its value
               itemBuilder: (context, index) {
-                return listViewWidget;
+                return Padding(
+                  padding: const EdgeInsets.only(right: 5.0),
+                  child: listViewWidget,
+                );
               },
             ),
           ),
