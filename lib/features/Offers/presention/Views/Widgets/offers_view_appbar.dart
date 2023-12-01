@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../../../core/utils/app_router.dart';
 import '../../../../../core/utils/helper.dart';
 
-class OfferdViewAppBar extends StatelessWidget {
-  const OfferdViewAppBar({super.key});
+class OffersViewAppBar extends StatelessWidget {
+  const OffersViewAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../../core/utils/helper.dart';
+import '../../../../../Offers/presention/Views/Widgets/offers_view_appbar.dart';
 import '../custom_search_text_field.dart';
 import '../list_view_with_title.dart';
 import 'recent_search_listview_item_widget.dart';
@@ -18,6 +19,10 @@ class SearchViewBody extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
+          const Padding(
+            padding: EdgeInsets.only(left: 18, right: 6, bottom: 5),
+            child: OffersViewAppBar(),
+          ),
           SizedBox(
             width: context.screenWidth * .94,
             height: 55,
@@ -54,7 +59,7 @@ class SearchViewBody extends StatelessWidget {
             height: 24,
           ),
           const ListViewWithTitle(
-            physics: BouncingScrollPhysics(),
+            physics: NeverScrollableScrollPhysics(),
             scrollDirection: Axis.vertical,
             listViewTitle: 'Recent Searches',
             listViewWidget: RecentSearchesListTileItem(),

@@ -18,7 +18,7 @@ class OffersViewBody extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const OfferdViewAppBar(),
+              const OffersViewAppBar(),
               const SizedBox(height: 10),
               const Text(
                 'Offers',
