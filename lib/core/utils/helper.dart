@@ -34,4 +34,22 @@ extension NavigatorHelper on BuildContext {
     Navigator.pushReplacementNamed(this, widgetName);
   }
 }
+
 // Navigator.pushReplacementNamed(context, kHomeView);
+
+extension PaddingList on List<Widget> {
+  List<Widget> paddingdirectional(
+      {double? top, double? bottom, double? start, double? end}) {
+    return map(
+      (e) => Padding(
+        padding: EdgeInsetsDirectional.only(
+          top: top ?? 0,
+          start: start ?? 0,
+          end: end ?? 0,
+          bottom: bottom ?? 0,
+        ),
+        child: e,
+      ),
+    ).toList();
+  }
+}

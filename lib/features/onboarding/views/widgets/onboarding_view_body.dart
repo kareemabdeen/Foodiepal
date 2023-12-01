@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/constant.dart';
+import 'package:food_app/core/database/cache/cach_helper.dart';
+import 'package:food_app/core/services/dependency_injection.dart';
+import 'package:food_app/features/onboarding/data/onboarding_model.dart';
 
 import '../../../../core/utils/app_router.dart';
 import '../../../../core/utils/helper.dart';
 import '../../../../core/widgets/primary_button_widget.dart';
-import '../../data/onboarding_model.dart';
 import 'swip_containers_list.dart';
 
 class OnBoardingViewBody extends StatefulWidget {
@@ -112,12 +115,9 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
               GeneralButton(
                 text: (currentPageNumber == 3) ? 'Get Started  ' : 'Next  ',
                 onPressed: () {
-                  pageController.nextPage(
-                    duration: const Duration(
-                      milliseconds: 500,
-                    ),
-                    curve: Curves.easeInOutSine,
-                  );
+                  getIt<CacheHelper>()
+                      .saveData(key: isOnBoardingvisited, value: true);
+                  navigateToNextPage();
                   if (currentPageNumber == 3) {
                     context.pushWithReplacmentNamed(
                       AppRouter.kLoginPage,
@@ -146,6 +146,15 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
           ),
         );
       },
+    );
+  }
+
+  void navigateToNextPage() {
+    pageController.nextPage(
+      duration: const Duration(
+        milliseconds: 500,
+      ),
+      curve: Curves.easeInOutSine,
     );
   }
 }

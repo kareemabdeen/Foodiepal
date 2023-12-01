@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:food_app/core/services/dependency_injection.dart';
+import 'package:food_app/features/Splash/prsentation/views/splash_view.dart';
 
+import 'core/database/cache/cach_helper.dart';
 import 'core/utils/app_router.dart';
-import 'features/Home/Presentation/views/home_view.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  setupDependecyInjection();
+  await getIt<CacheHelper>().init();
+
   runApp(const FoodApp());
 }
 
@@ -35,7 +41,7 @@ class FoodApp extends StatelessWidget {
           statusBarIconBrightness: Brightness.dark,
           statusBarColor: Colors.transparent,
         ),
-        child: HomeView(),
+        child: SplashView(),
       ),
     );
   }

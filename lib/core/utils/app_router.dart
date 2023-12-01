@@ -8,7 +8,8 @@ import '../../features/menu/prsentation/views/menu_view.dart';
 import '../../features/onboarding/views/onboarding_view.dart';
 
 abstract class AppRouter {
-  static const konBoardingView = '/';
+  static const kSplashscreen = '/';
+  static const konBoardingView = '/onboarding';
   static const kHomeView = '/HomeView';
   static const kLoginPage = '/LoginPage';
   static const kSearchPage = '/searchPage';
@@ -20,7 +21,7 @@ abstract class AppRouter {
   static Route<dynamic>? onGenerateRoutes(RouteSettings route) {
     String routeName = route.name!;
 
-    //FIXME: provide the nedded bloc providers here
+    //! provide the nedded bloc providers here
     switch (routeName) {
       case konBoardingView:
         return MaterialPageRoute(builder: (context) => const OnBoardingView());
