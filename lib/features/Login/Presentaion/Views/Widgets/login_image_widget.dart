@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/helper.dart';
 
-class LoginImageWidget extends StatelessWidget {
-  const LoginImageWidget({super.key});
+class LoginImage extends StatelessWidget {
+  const LoginImage({super.key});
 
   @override
   Widget build(BuildContext context) {
