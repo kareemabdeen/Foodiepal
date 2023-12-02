@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_app/constant.dart';
 import 'package:food_app/core/database/cache/cach_helper.dart';
 import 'package:food_app/core/services/dependency_injection.dart';
+import 'package:food_app/core/utils/assets.dart';
 import 'package:lottie/lottie.dart';
 
 import '../../../../core/utils/app_router.dart';
@@ -45,7 +46,7 @@ class _SplashViewState extends State<SplashView> {
     return Scaffold(
       body: Center(
         child: Lottie.asset(
-          'assets/images/Animation - 1701022826753.json',
+          Assets.splashImage,
           fit: BoxFit.contain,
           reverse: true,
         ),

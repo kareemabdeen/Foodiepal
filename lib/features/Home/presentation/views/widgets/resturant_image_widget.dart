@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/core/utils/assets.dart';
 
 import '../../../../../core/utils/helper.dart';
 import 'fav_cirular_button_widget.dart';
@@ -18,7 +19,7 @@ class ResturantImageWidget extends StatelessWidget {
         image: const DecorationImage(
           fit: BoxFit.cover,
           image: AssetImage(
-            "assets/images/food.jpg",
+            Assets.imagesFoodDemo,
           ),
         ),
       ),
