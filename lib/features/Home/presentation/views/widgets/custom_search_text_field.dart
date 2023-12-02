@@ -46,8 +46,9 @@ class CustomSearchTextField extends StatelessWidget {
                   ),
                   GestureDetector(
                     onTap: () {},
-                    child: const Icon(Icons
-                        .tune), // Todo: will be changed to an image in material io => imageName: Discover_tune
+                    child: const Icon(
+                      Icons.tune,
+                    ), // Todo: will be changed to an image in material io => imageName: Discover_tune
                   ),
                 ],
               ),

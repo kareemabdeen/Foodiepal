@@ -22,7 +22,7 @@ class LoginViewBody extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const LoginImageWidget(),
+            const LoginImage(),
             const LoginDescription(),
             SizedBox(
               height: context.screenHight * .09,

@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/features/menu/prsentation/views/menu_view.dart';
 
-import '../../../../../core/utils/app_router.dart';
 import '../../../../../core/utils/helper.dart';
 import '../../../../../core/utils/styles.dart';
+import '../../../../menu/prsentation/views/menu_view.dart';
 import '../search_view.dart';
 import 'category_item_widget.dart';
 import 'custom_appbar.dart';
@@ -44,7 +43,7 @@ class HomeViewBody extends StatelessWidget {
               ),
               child: InkWell(
                 onTap: () => context.simplePush(const SearchView()),
-                // todo: change it later to appRouter.Widgetname to use onGenerateRoute
+                //Todo: change it later to appRouter.Widgetname to use onGenerateRoute
                 child: const CustomSearchTextField(
                   borderRadius: 26,
                   enabled: false,
