@@ -18,7 +18,7 @@ class OffersImageWidget extends StatelessWidget {
         image: const DecorationImage(
           fit: BoxFit.cover,
           image: AssetImage(
-            Assets.imagesFood,
+            Assets.imagesFoodDemo,
           ),
         ),
       ),
