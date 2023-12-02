@@ -16,7 +16,7 @@ class ListViewWithTitle extends StatelessWidget {
     required this.listViewWidget,
     required this.scrollDirection,
     required this.physics,
-    this.listViewHeight = 215, // 240
+    this.listViewHeight = 220, // 240
   });
 
   @override
@@ -43,7 +43,7 @@ class ListViewWithTitle extends StatelessWidget {
               itemCount: 20,
               itemBuilder: (context, index) {
                 return Padding(
-                  padding: EdgeInsets.only(right: 8),
+                  padding: const EdgeInsets.only(right: 8),
                   child: listViewWidget,
                 );
               },

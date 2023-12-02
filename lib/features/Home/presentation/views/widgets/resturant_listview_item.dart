@@ -9,10 +9,11 @@ class ResturantListViewItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         ResturantImageWidget(),
         SizedBox(height: 5),
-        ResturantDetailsWidget(),
+        RestaurantDetailsWidget(),
       ],
     );
   }
