@@ -4,13 +4,12 @@ import 'package:food_app/features/Restaurant_page/Presentation/views/widgets/del
 import 'package:food_app/features/Restaurant_page/Presentation/views/widgets/restaurant_rating%20details._widget.dart';
 import 'package:gap/gap.dart';
 
-class RestaurantOffersCardItem extends StatelessWidget {
-  const RestaurantOffersCardItem({super.key});
+//Todo:change its name later
+class RestaurantProfileInfoCard extends StatelessWidget {
+  const RestaurantProfileInfoCard({super.key});
 
   @override
   Widget build(BuildContext context) {
-    // ignore: sized_box_for_whitespace
-
     return AspectRatio(
       aspectRatio: 3 / 2,
       child: Container(
@@ -25,7 +24,7 @@ class RestaurantOffersCardItem extends StatelessWidget {
           boxShadow: [
             BoxShadow(
               offset: const Offset(0, 2),
-              color: Colors.grey.shade100,
+              color: Colors.grey.shade300,
               spreadRadius: 0,
               blurStyle: BlurStyle.normal,
               blurRadius: 20,
@@ -35,6 +34,7 @@ class RestaurantOffersCardItem extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start, //Changed
           children: [
+            //Todo: refactor this part
             ListTile(
               leading: Image.asset(
                 Assets.imagesStarbucksLogo,

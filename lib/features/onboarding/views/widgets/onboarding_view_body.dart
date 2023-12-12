@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_app/constant.dart';
 import 'package:food_app/core/database/cache/cach_helper.dart';
 import 'package:food_app/core/services/dependency_injection.dart';
+import 'package:food_app/core/widgets/image_with_aspect_ratio.dart';
 import 'package:food_app/features/onboarding/data/onboarding_model.dart';
 
 import '../../../../core/utils/app_router.dart';
@@ -82,11 +83,9 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
               ),
               SizedBox(
                 height: context.screenHight * .6,
-                child: AspectRatio(
+                child: ImageWithAspectRatio(
                   aspectRatio: 2 / 4,
-                  child: Image.asset(
-                    onboardingList[index].image,
-                  ),
+                  image: onboardingList[index].image,
                 ),
               ),
               //Todo : images should be changed later .
