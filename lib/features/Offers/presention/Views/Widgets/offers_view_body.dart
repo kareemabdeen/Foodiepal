@@ -15,6 +15,7 @@ class OffersViewBody extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.only(left: 16, right: 16, top: 32, bottom: 8),
         child: SingleChildScrollView(
+          physics: const NeverScrollableScrollPhysics(),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
