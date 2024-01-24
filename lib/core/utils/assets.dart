@@ -1,6 +1,13 @@
 class Assets {
   Assets._();
 
+  /// Assets for imagesAnimation  1701022826753
+
+  /// assets/images/Animation - 1701022826753.json
+
+  static const String splashImage =
+      "assets/images/Animation - 1701022826753.json";
+
   /// Assets for imagesBurger
 
   /// assets/images/Burger.jpg
@@ -25,6 +32,8 @@ class Assets {
   /// assets/images/imagesPizza.jpg
 
   static const String imagesImagesPizza = "assets/images/imagesPizza.jpg";
+
+  static const String imagesCartDemo = 'assets/images/pepsi.png';
 
   /// Assets for imagesLoginImg
 
@@ -57,6 +66,8 @@ class Assets {
 
   /// assets/images/splashImage.json
 
+  /// Assets for imagesPizza (1)
+
   static const String imagesSplashImage = "assets/images/splashImage.json";
 
   /// Assets for imagesStarbucksCover
@@ -70,8 +81,6 @@ class Assets {
   /// assets/images/starbucks-logo.png
 
   static const String imagesStarbucksLogo = "assets/images/starbucks-logo.png";
-
-  static const String splashImage = "assets/images/splashImage.json";
 
   static const String imagesPizza = "assets/images/imagesPizza.jpg";
 }
