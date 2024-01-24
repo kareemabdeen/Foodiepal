@@ -7,7 +7,7 @@ class RestaurantView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: RestaurantViewBody(),
+      body: SafeArea(child: RestaurantViewBody()),
     );
   }
 }
