@@ -1,38 +1,93 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/core/utils/assets.dart';
 import 'package:food_app/core/utils/helper.dart';
+import 'package:food_app/core/widgets/background_icon.dart';
 import 'package:food_app/core/widgets/image_with_aspect_ratio.dart';
 import 'package:food_app/features/Restaurant_page/Presentation/views/widgets/icon_with_text_item.dart';
+import 'package:food_app/features/Restaurant_page/Presentation/views/widgets/restaurant_offer_card_widget.dart';
 import 'package:gap/gap.dart';
 
 class RestaurantViewBody extends StatelessWidget {
-  const RestaurantViewBody({super.key});
+  const RestaurantViewBody({
+    super.key,
+  });
 
+  // final Widget restaurantItem;
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Column(
-        children: [
-          SizedBox(height: context.screenHight * .1),
-          // const RestaurantProfileInfoCard(),
-          // SizedBox(height: context.screenHight * .1),
-          // const Row(
-          //   mainAxisAlignment: MainAxisAlignment
-          //       .spaceAround, //Todo:check if it not same as we know
-          //   children: [
-          //     BlaBlaItem(),
-          //     BlaBlaItem(),
-          //   ],
-          // ),
-          // const Gap(20),
-          const RestaurantMealItem(),
-        ],
-      ),
+    return CustomScrollView(
+      slivers: [
+        SliverAppBar(
+          elevation: 0,
+          leading: Padding(
+            padding: const EdgeInsets.only(
+              left: 16.0,
+              top: 2,
+            ),
+            child: CustomIconWithBackground(
+              color: Colors.white,
+              icon: Icons.arrow_back,
+              iconSize: 24,
+              iconFunction: () => Navigator.pop(context),
+            ),
+          ),
+          flexibleSpace: Stack(
+            children: [
+              FlexibleSpaceBar(
+                background: Image.asset(
+                  Assets.imagesStarbucksCover,
+                  fit: BoxFit.cover,
+                ),
+              ),
+              const Positioned(
+                top: 50.0, // Adjust as needed
+                left: 20.0,
+                child: RestaurantProfileInfoCard(),
+              ),
+            ],
+          ),
+          expandedHeight: context.screenHight * .25,
+          actions: const [
+            CustomIconWithBackground(
+              color: Colors.white,
+              icon: Icons.search,
+              iconSize: 24,
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16.0),
+              child: CustomIconWithBackground(
+                color: Colors.white,
+                icon: Icons.share,
+                iconSize: 24,
+              ),
+            ),
+          ],
+        ),
+      ],
     );
   }
 }
 
+//  return Padding(
+//       padding: const EdgeInsets.all(8.0),
+//       child: Column(
+//         children: [
+//           SizedBox(height: context.screenHight * .1),
+//           // const RestaurantProfileInfoCard(),
+//           // SizedBox(height: context.screenHight * .1),
+//           // const Row(
+//           //   mainAxisAlignment: MainAxisAlignment
+//           //       .spaceAround, //Todo:check if it not same as we know
+//           //   children: [
+//           //     BlaBlaItem(),
+//           //     BlaBlaItem(),
+//           //   ],
+//           // ),
+//           // const Gap(20),
+//           const RestaurantMealItem(),
+//         ],
+//       ),
+//     );
 class BlaBlaItem extends StatelessWidget {
   const BlaBlaItem({super.key});
 
