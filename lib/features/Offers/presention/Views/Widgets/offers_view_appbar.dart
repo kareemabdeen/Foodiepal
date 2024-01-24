@@ -18,7 +18,7 @@ class OffersViewAppBar extends StatelessWidget {
         alignment: Alignment.topLeft,
         child: Icon(
           Icons.arrow_back,
-          size: 26,
+          size: 30,
         ),
       ),
     );

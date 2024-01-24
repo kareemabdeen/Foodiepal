@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:food_app/core/services/dependency_injection.dart';
+import 'package:food_app/features/Cart/Presentation/Views/cart_page.dart';
 import 'package:food_app/features/Restaurant_page/Presentation/views/restaurant_page_view.dart';
 
 import 'core/database/cache/cach_helper.dart';
@@ -41,7 +42,7 @@ class FoodApp extends StatelessWidget {
           statusBarIconBrightness: Brightness.dark,
           statusBarColor: Colors.transparent,
         ),
-        child: RestaurantView(), //Todo: put Splash view instead
+        child: CartPage(), //Todo: put Splash view instead
       ),
     );
   }
