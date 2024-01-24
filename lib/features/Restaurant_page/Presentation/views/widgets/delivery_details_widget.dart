@@ -27,7 +27,7 @@ class RestaurantDeliveryDetails extends StatelessWidget {
           text2: '60 mins',
         ),
         Container(
-          //FixME: this divider cannot appear without wrapping with container
+          //!FixME: this divider cannot appear without wrapping with container
           color: Colors.grey.shade200,
           child: const VerticalDivider(
             thickness: 3,

@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../constant.dart';
@@ -64,10 +65,12 @@ class SignUpReminder extends StatelessWidget {
             const Spacer(),
             SizedBox(
               width: context.screenWidth * 0.3,
-              child: Image.network(
-                'https://knowunity.com/_next/static/media/register.957389f4.webp',
+              child: CachedNetworkImage(
+                imageUrl:
+                    'https://knowunity.com/_next/static/media/register.957389f4.webp',
+                fit: BoxFit.cover,
               ),
-            )
+            ),
           ],
         ),
       ),
