@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:food_app/core/services/dependency_injection.dart';
+import 'package:food_app/features/Cart/Presentation/Views/cart_page.dart';
 import 'package:food_app/features/Restaurant_page/Presentation/views/restaurant_page_view.dart';
 import 'package:food_app/features/Splash/prsentation/views/splash_view.dart';
 
