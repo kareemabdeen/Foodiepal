@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/features/Offers/presention/Views/Widgets/offers_view_appbar.dart';
 
 import '../../../../../core/utils/styles.dart';
 import '../../../../Home/presentation/views/widgets/custom_appBar.dart';
+import '../../../../Offers/presention/Views/Widgets/offers_view_appbar.dart';
 import 'custom_menu_sign_up_reminder.dart';
 import 'menu_buttons_list.dart';
 

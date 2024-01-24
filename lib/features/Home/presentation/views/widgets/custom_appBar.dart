@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/core/widgets/background_icon.dart';
 
 class CustomAppBar extends StatelessWidget {
   final String title;
@@ -37,21 +38,27 @@ class CustomAppBar extends StatelessWidget {
               subTitle,
               style: subTitleStyle,
             ),
-          ],
-        ),
-        Material(
-          borderRadius: BorderRadius.circular(50),
-          color: Colors.grey.shade200,
-          child: IconButton(
-            icon: Icon(
-              icon,
-              color: Colors.black,
-              size: iconSize,
+            CustomIconWithBackground(
+              iconSize: iconSize,
+              icon: icon,
+              color: Colors.grey.shade200,
             ),
-            onPressed: iconFunction,
-          ),
+          ],
         ),
       ],
     );
   }
 }
+
+        // Material(
+        //   borderRadius: BorderRadius.circular(50),
+        //   color: Colors.grey.shade200,
+        //   child: IconButton(
+        //     icon: Icon(
+        //       icon,
+        //       color: Colors.black,
+        //       size: iconSize,
+        //     ),
+        //     onPressed: iconFunction,
+        //   ),
+        // ),

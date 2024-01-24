@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/constant.dart';
-import 'package:food_app/core/database/cache/cach_helper.dart';
-import 'package:food_app/core/services/dependency_injection.dart';
-import 'package:food_app/core/utils/assets.dart';
 import 'package:lottie/lottie.dart';
 
+import '../../../../constant.dart';
+import '../../../../core/database/cache/cach_helper.dart';
+import '../../../../core/services/dependency_injection.dart';
 import '../../../../core/utils/app_router.dart';
+import '../../../../core/utils/assets.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
@@ -18,7 +18,6 @@ class _SplashViewState extends State<SplashView> {
   @override
   void initState() {
     super.initState();
-
     determineNaviationScreenAccordingToUserHistory();
   }
 

@@ -37,27 +37,28 @@ class SignUpReminder extends StatelessWidget {
                       ),
                     ),
                     ElevatedButton(
-                        style: ButtonStyle(
-                          textStyle: MaterialStateProperty.all(
-                            StylesManager.textStyle18,
-                          ),
-                          foregroundColor:
-                              MaterialStateProperty.all<Color>(Colors.white),
-                          backgroundColor:
-                              MaterialStateProperty.all<Color>(kBlueColor),
-                          shape:
-                              MaterialStateProperty.all<RoundedRectangleBorder>(
-                            const RoundedRectangleBorder(
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(10),
-                                ),
-                                side: BorderSide(color: kBlueColor)),
-                          ),
+                      style: ButtonStyle(
+                        textStyle: MaterialStateProperty.all(
+                          StylesManager.textStyle18,
                         ),
-                        onPressed: () {},
-                        child: const Text(
-                          'Sign up',
-                        ))
+                        foregroundColor:
+                            MaterialStateProperty.all<Color>(Colors.white),
+                        backgroundColor:
+                            MaterialStateProperty.all<Color>(kBlueColor),
+                        shape:
+                            MaterialStateProperty.all<RoundedRectangleBorder>(
+                          const RoundedRectangleBorder(
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(10),
+                              ),
+                              side: BorderSide(color: kBlueColor)),
+                        ),
+                      ),
+                      onPressed: () {},
+                      child: const Text(
+                        'Sign up',
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -66,8 +67,7 @@ class SignUpReminder extends StatelessWidget {
             SizedBox(
               width: context.screenWidth * 0.3,
               child: CachedNetworkImage(
-                imageUrl:
-                    'https://knowunity.com/_next/static/media/register.957389f4.webp',
+                imageUrl: kloginReminderImage,
                 fit: BoxFit.cover,
               ),
             ),
