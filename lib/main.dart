@@ -6,18 +6,17 @@ import 'package:food_app/features/Splash/prsentation/views/splash_view.dart';
 import 'core/database/cache/cach_helper.dart';
 import 'core/utils/app_router.dart';
 
-void main() async {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   setupDependecyInjection();
   await getIt<CacheHelper>().init();
 
-  runApp(const FoodApp());
+  runApp(const FoodiePal());
 }
 
-class FoodApp extends StatelessWidget {
-  const FoodApp({super.key});
+class FoodiePal extends StatelessWidget {
+  const FoodiePal({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
