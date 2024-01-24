@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:food_app/core/services/dependency_injection.dart';
-import 'package:food_app/features/Restaurant_page/Presentation/views/restaurant_page_view.dart';
-import 'package:food_app/features/Splash/prsentation/views/splash_view.dart';
 
 import 'core/database/cache/cach_helper.dart';
+import 'core/services/dependency_injection.dart';
 import 'core/utils/app_router.dart';
-import 'features/Offers/presention/Views/offers_view.dart';
+import 'features/Restaurant_page/Presentation/views/restaurant_page_view.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -42,7 +40,7 @@ class FoodiePal extends StatelessWidget {
           statusBarIconBrightness: Brightness.dark,
           statusBarColor: Colors.transparent,
         ),
-        child: SplashView(), //Todo: put Splash view instead
+        child: RestaurantView(), //Todo: put Splash view instead
       ),
     );
   }

@@ -38,7 +38,7 @@ class RestaurantDeliveryDetails extends StatelessWidget {
         ),
         const DeliveryDeepDetails(
           text1: 'Delivered by',
-          text2: 'Restaurant',
+          text2: 'Foodipal', //Todo : fix it later with acustom logo
         ),
       ],
     );

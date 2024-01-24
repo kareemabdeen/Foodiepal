@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/core/utils/assets.dart';
-import 'package:food_app/features/Restaurant_page/Presentation/views/widgets/delivery_details_widget.dart';
-import 'package:food_app/features/Restaurant_page/Presentation/views/widgets/restaurant_rating%20details._widget.dart';
 import 'package:gap/gap.dart';
+
+import '../../../../../core/utils/assets.dart';
+import 'delivery_details_widget.dart';
+import 'restaurant_rating%20details._widget.dart';
 
 //Todo:change its name later
 class RestaurantProfileInfoCard extends StatelessWidget {
@@ -32,7 +33,6 @@ class RestaurantProfileInfoCard extends StatelessWidget {
           ],
         ),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start, //Changed
           children: [
             //Todo: refactor this part
             ListTile(

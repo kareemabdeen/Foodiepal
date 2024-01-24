@@ -1,14 +1,11 @@
 class Assets {
-
   Assets._();
-
 
   /// Assets for imagesBurger
 
   /// assets/images/Burger.jpg
 
   static const String imagesBurger = "assets/images/Burger.jpg";
-
 
   /// Assets for imagesFoodCategoryImage
 
@@ -17,13 +14,11 @@ class Assets {
   static const String imagesFoodCategoryImage =
       "assets/images/food_category_image.png";
 
-
   /// Assets for imagesFoodDemo
 
   /// assets/images/foodDemo.jpg
 
   static const String imagesFoodDemo = "assets/images/foodDemo.jpg";
-
 
   /// Assets for imagesImagesPizza
 
@@ -31,13 +26,11 @@ class Assets {
 
   static const String imagesImagesPizza = "assets/images/imagesPizza.jpg";
 
-
   /// Assets for imagesLoginImg
 
   /// assets/images/Login_img.png
 
   static const String imagesLoginImg = "assets/images/Login_img.png";
-
 
   /// Assets for imagesOnboardingimg2
 
@@ -46,14 +39,12 @@ class Assets {
   static const String imagesOnboardingimg2 =
       "assets/images/onboardingimg2.jpeg";
 
-
   /// Assets for imagesOnboardingimg3
 
   /// assets/images/onboardingimg3.jpeg
 
   static const String imagesOnboardingimg3 =
       "assets/images/onboardingimg3.jpeg";
-
 
   /// Assets for imagesOnboardingimg4
 
@@ -62,20 +53,17 @@ class Assets {
   static const String imagesOnboardingimg4 =
       "assets/images/onboardingimg4.jpeg";
 
-
   /// Assets for imagesSplashImage
 
   /// assets/images/splashImage.json
 
   static const String imagesSplashImage = "assets/images/splashImage.json";
 
-
   /// Assets for imagesStarbucksCover
 
   /// assets/images/starbucksCover.jpg
 
   static const String imagesStarbucksCover = "assets/images/starbucksCover.jpg";
-
 
   /// Assets for imagesStarbucksLogo
 
@@ -85,7 +73,5 @@ class Assets {
 
   static const String splashImage = "assets/images/splashImage.json";
 
-
   static const String imagesPizza = "assets/images/imagesPizza.jpg";
-
 }

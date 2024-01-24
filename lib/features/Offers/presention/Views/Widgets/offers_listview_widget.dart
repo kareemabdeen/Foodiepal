@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/features/Offers/presention/Views/Widgets/offer_item_details_sheet.dart';
 
-import '../../../../../core/utils/assets.dart';
-import '../../../../../core/utils/styles.dart';
 import 'offers_listview_item_widget.dart';
 
 class OffersListView extends StatefulWidget {
@@ -26,9 +24,11 @@ class _OffersListViewState extends State<OffersListView> {
           itemBuilder: (context, index) {
             return GestureDetector(
                 onTap: () {
-                  setState(() {
-                    _showSheet = !_showSheet;
-                  });
+                  setState(
+                    () {
+                      _showSheet = !_showSheet;
+                    },
+                  );
                 },
                 child: const OfferListViewItem());
           },

@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/core/utils/assets.dart';
-import 'package:food_app/core/utils/helper.dart';
-import 'package:food_app/core/widgets/background_icon.dart';
-import 'package:food_app/core/widgets/image_with_aspect_ratio.dart';
-import 'package:food_app/features/Restaurant_page/Presentation/views/widgets/icon_with_text_item.dart';
-import 'package:food_app/features/Restaurant_page/Presentation/views/widgets/restaurant_offer_card_widget.dart';
 import 'package:gap/gap.dart';
+
+import '../../../../../core/utils/assets.dart';
+import '../../../../../core/widgets/background_icon.dart';
+import '../../../../../core/widgets/image_with_aspect_ratio.dart';
+import 'icon_with_text_item.dart';
 
 class RestaurantViewBody extends StatelessWidget {
   const RestaurantViewBody({
@@ -31,37 +30,37 @@ class RestaurantViewBody extends StatelessWidget {
               iconFunction: () => Navigator.pop(context),
             ),
           ),
-          flexibleSpace: Stack(
-            children: [
-              FlexibleSpaceBar(
-                background: Image.asset(
-                  Assets.imagesStarbucksCover,
-                  fit: BoxFit.cover,
-                ),
-              ),
-              const Positioned(
-                top: 50.0, // Adjust as needed
-                left: 20.0,
-                child: RestaurantProfileInfoCard(),
-              ),
-            ],
-          ),
-          expandedHeight: context.screenHight * .25,
-          actions: const [
-            CustomIconWithBackground(
-              color: Colors.white,
-              icon: Icons.search,
-              iconSize: 24,
-            ),
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 16.0),
-              child: CustomIconWithBackground(
-                color: Colors.white,
-                icon: Icons.share,
-                iconSize: 24,
-              ),
-            ),
-          ],
+          //   flexibleSpace: Stack(
+          //     children: [
+          //       FlexibleSpaceBar(
+          //         background: Image.asset(
+          //           Assets.imagesStarbucksCover,
+          //           fit: BoxFit.cover,
+          //         ),
+          //       ),
+          //       const Positioned(
+          //         top: 50.0, // Adjust as needed
+          //         left: 20.0,
+          //         child: RestaurantProfileInfoCard(),
+          //       ),
+          //     ],
+          //   ),
+          //   expandedHeight: context.screenHight * .25,
+          //   actions: const [
+          //     CustomIconWithBackground(
+          //       color: Colors.white,
+          //       icon: Icons.search,
+          //       iconSize: 24,
+          //     ),
+          //     Padding(
+          //       padding: EdgeInsets.symmetric(horizontal: 16.0),
+          //       child: CustomIconWithBackground(
+          //         color: Colors.white,
+          //         icon: Icons.share,
+          //         iconSize: 24,
+          //       ),
+          //     ),
+          //   ],
         ),
       ],
     );

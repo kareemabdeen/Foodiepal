@@ -1,13 +1,107 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/features/Restaurant_page/Presentation/views/widgets/restaurant_view_body.dart';
+
+import 'widgets/restaurant_offer_card_widget.dart';
+import 'widgets/restaurant_screen_appbar_widget.dart';
 
 class RestaurantView extends StatelessWidget {
   const RestaurantView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: SafeArea(child: RestaurantViewBody()),
+    return const SafeArea(
+      child: Scaffold(
+        body: Stack(
+          fit: StackFit.passthrough,
+          children: [
+            CustomScrollView(
+              slivers: [
+                RestaurantViewAppBar(),
+              ],
+            ),
+            Positioned(
+              bottom: 500.0,
+              right: 0,
+              left: 0,
+              top: 90,
+              child: RestaurantProfileInfoCard(),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class Categories extends StatefulWidget {
+  const Categories({
+    Key? key,
+    required this.onChanged,
+    required this.selectedIndex,
+  }) : super(key: key);
+
+  final ValueChanged<int> onChanged;
+  final int selectedIndex;
+
+  @override
+  State<Categories> createState() => _CategoriesState();
+}
+
+class _CategoriesState extends State<Categories> {
+  int selectedIndex = 0;
+  late ScrollController _controller;
+  @override
+  void initState() {
+    _controller = ScrollController();
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  void didUpdateWidget(covariant Categories oldWidget) {
+    _controller.animateTo(
+      80.0 * widget.selectedIndex,
+      curve: Curves.ease,
+      duration: const Duration(milliseconds: 200),
+    );
+    super.didUpdateWidget(oldWidget);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      controller: _controller,
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        children: List.generate(
+          demoCategoryMenus.length,
+          (index) => Padding(
+            padding: const EdgeInsets.only(left: 8),
+            child: TextButton(
+              onPressed: () {
+                widget.onChanged(index);
+                // _controller.animateTo(
+                //   80.0 * index,
+                //   curve: Curves.ease,
+                //   duration: const Duration(milliseconds: 200),
+                // );
+              },
+              style: TextButton.styleFrom(
+                  foregroundColor: widget.selectedIndex == index
+                      ? Colors.black
+                      : Colors.black45),
+              child: Text(
+                demoCategoryMenus[index].category,
+                style: const TextStyle(fontSize: 20),
+              ),
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
