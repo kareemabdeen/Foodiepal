@@ -21,7 +21,10 @@ class CustomIconWithBackground extends StatelessWidget {
   Widget build(BuildContext context) {
     return CircleAvatar(
       backgroundColor: color,
-      child: Icon(icon),
+      child: Icon(
+        icon,
+        color: Colors.black,
+      ),
     );
   }
 }

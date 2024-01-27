@@ -11,32 +11,30 @@ class OffersViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Padding(
-        padding: const EdgeInsets.only(left: 16, right: 16, top: 32, bottom: 8),
-        child: SingleChildScrollView(
-          physics: const NeverScrollableScrollPhysics(),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const OffersViewAppBar(),
-              const SizedBox(height: 10),
-              const Text(
-                'Offers',
-                style: StylesManager.textStyle26,
-              ),
-              SizedBox(
-                width: context.screenWidth,
-                height: 50,
-                child: FiltersListView(),
-              ),
-              SizedBox(
-                height: context.screenHight,
-                width: context.screenWidth,
-                child: const OffersListView(),
-              ),
-            ],
-          ),
+    return Padding(
+      padding: const EdgeInsets.only(left: 16, right: 16, top: 32, bottom: 8),
+      child: SingleChildScrollView(
+        physics: const NeverScrollableScrollPhysics(),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const OffersViewAppBar(),
+            const SizedBox(height: 10),
+            const Text(
+              'Offers',
+              style: StylesManager.textStyle26,
+            ),
+            SizedBox(
+              width: context.screenWidth,
+              height: 50,
+              child: FiltersListView(),
+            ),
+            SizedBox(
+              height: context.screenHight,
+              width: context.screenWidth,
+              child: const OffersListView(),
+            ),
+          ],
         ),
       ),
     );

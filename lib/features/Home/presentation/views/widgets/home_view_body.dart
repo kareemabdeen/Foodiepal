@@ -21,7 +21,8 @@ class HomeViewBody extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 5),
+            padding:
+                const EdgeInsets.symmetric(horizontal: 15.0, vertical: 5),
             child: CustomAppBar(
               title: 'Deliver Now',
               titleStyle: StylesManager.textStyle16
@@ -67,7 +68,6 @@ class HomeViewBody extends StatelessWidget {
           const Padding(
             padding: EdgeInsets.symmetric(vertical: 8.0),
             child: CustomCarouselSlider(),
-
           ),
           ListViewWithTitle(
             listViewHeight: context.screenHight * 0.29,
