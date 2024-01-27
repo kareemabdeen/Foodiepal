@@ -40,10 +40,14 @@ class CustomAppBar extends StatelessWidget {
             ),
           ],
         ),
-        CustomIconWithBackground(
-          iconSize: iconSize,
-          icon: icon,
-          color: Colors.grey.shade200,
+        GestureDetector(
+          onTap: iconFunction,
+          child: CustomIconWithBackground(
+            iconFunction: iconFunction,
+            iconSize: iconSize,
+            icon: icon,
+            color: Colors.grey.shade200,
+          ),
         ),
       ],
     );
