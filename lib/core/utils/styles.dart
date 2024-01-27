@@ -55,4 +55,8 @@ abstract class StylesManager {
     fontSize: 14,
     fontWeight: FontWeight.normal,
   );
+  static const subTitle16 = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w300,
+  );
 }

@@ -5,6 +5,7 @@ import 'core/database/cache/cach_helper.dart';
 import 'core/services/dependency_injection.dart';
 import 'core/utils/app_router.dart';
 import 'features/Restaurant_page/Presentation/views/restaurant_page_view.dart';
+import 'features/Splash/prsentation/views/splash_view.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -40,7 +41,7 @@ class FoodiePal extends StatelessWidget {
           statusBarIconBrightness: Brightness.dark,
           statusBarColor: Colors.transparent,
         ),
-        child: RestaurantView(), //Todo: put Splash view instead
+        child: SplashView(), //Todo: put Splash view instead
       ),
     );
   }

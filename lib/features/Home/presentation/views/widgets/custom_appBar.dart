@@ -38,27 +38,14 @@ class CustomAppBar extends StatelessWidget {
               subTitle,
               style: subTitleStyle,
             ),
-            CustomIconWithBackground(
-              iconSize: iconSize,
-              icon: icon,
-              color: Colors.grey.shade200,
-            ),
           ],
+        ),
+        CustomIconWithBackground(
+          iconSize: iconSize,
+          icon: icon,
+          color: Colors.grey.shade200,
         ),
       ],
     );
   }
 }
-
-        // Material(
-        //   borderRadius: BorderRadius.circular(50),
-        //   color: Colors.grey.shade200,
-        //   child: IconButton(
-        //     icon: Icon(
-        //       icon,
-        //       color: Colors.black,
-        //       size: iconSize,
-        //     ),
-        //     onPressed: iconFunction,
-        //   ),
-        // ),
