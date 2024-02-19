@@ -22,90 +22,92 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "BestOffers": MessageLookupByLibrary.simpleMessage("Best Offers"),
-        "BestToDineIn": MessageLookupByLibrary.simpleMessage("Best To Dine-In"),
-        "ChangeLanguage":
-            MessageLookupByLibrary.simpleMessage("Change Language"),
-        "ContinueWithEmail":
-            MessageLookupByLibrary.simpleMessage("Continue with Email"),
+        "BestOffers": MessageLookupByLibrary.simpleMessage("أفضل العروض"),
+        "BestToDineIn":
+            MessageLookupByLibrary.simpleMessage("الافضل لتناول الطعام"),
+        "ChangeLanguage": MessageLookupByLibrary.simpleMessage("تغيير اللغة"),
+        "ContinueWithEmail": MessageLookupByLibrary.simpleMessage(
+            "سجل باستخدام البريد الالكتروني"),
         "ContinueWithFacebook":
-            MessageLookupByLibrary.simpleMessage("Continue with Facebook"),
+            MessageLookupByLibrary.simpleMessage("سجل ياستخدام فيس بوك"),
         "ContinueWithGoogle":
-            MessageLookupByLibrary.simpleMessage("Continue with Google"),
-        "DeliverNow": MessageLookupByLibrary.simpleMessage("Deliver Now"),
-        "DineIn": MessageLookupByLibrary.simpleMessage("Dine In"),
-        "Food": MessageLookupByLibrary.simpleMessage("Food"),
-        "HeyThere": MessageLookupByLibrary.simpleMessage("Hey there"),
-        "HiGuest": MessageLookupByLibrary.simpleMessage("Hi guest"),
-        "Home": MessageLookupByLibrary.simpleMessage("Home"),
-        "Koshary": MessageLookupByLibrary.simpleMessage("Koshary"),
+            MessageLookupByLibrary.simpleMessage("سجل ياستخدام جوجل"),
+        "DeliverNow": MessageLookupByLibrary.simpleMessage("توصيل الآن"),
+        "DineIn":
+            MessageLookupByLibrary.simpleMessage("تناول الطعام في المطعم"),
+        "Food": MessageLookupByLibrary.simpleMessage("طعام"),
+        "HeyThere": MessageLookupByLibrary.simpleMessage("أهلا بك"),
+        "HiGuest": MessageLookupByLibrary.simpleMessage("مرحبا بك ضيفنا"),
+        "Home": MessageLookupByLibrary.simpleMessage(" الرئيسية"),
+        "Koshary": MessageLookupByLibrary.simpleMessage("كشري"),
         "LogInOrCreateAnAccountForAFasterOrderingExperience":
             MessageLookupByLibrary.simpleMessage(
-                "Log in or create an account for a faster ordering experience."),
-        "PanneerMomos": MessageLookupByLibrary.simpleMessage("PanneerMomos"),
-        "Pizza": MessageLookupByLibrary.simpleMessage("Pizza"),
+                "سجل دخولك او انشأ حساب لتجربة افضل وسرعة تسوق وحفظ بيناتك والكثير من المميزات"),
+        "PanneerMomos": MessageLookupByLibrary.simpleMessage("مأكولات بحرية"),
+        "Pizza": MessageLookupByLibrary.simpleMessage("بيتزا"),
         "PopularRestaurants":
-            MessageLookupByLibrary.simpleMessage("Popular Restaurants"),
-        "RecentSearches":
-            MessageLookupByLibrary.simpleMessage("Recent Searches"),
+            MessageLookupByLibrary.simpleMessage("المطاعم المشهورة"),
+        "RecentSearches": MessageLookupByLibrary.simpleMessage("اخر البحث"),
         "SearchForFood": MessageLookupByLibrary.simpleMessage(
-            "Search for food, grocery, meat etc"),
-        "Theme": MessageLookupByLibrary.simpleMessage("Theme"),
-        "TopCategories": MessageLookupByLibrary.simpleMessage("Top categories"),
+            "ابحث عن الطعام والبقالة واللحوم وما إلى ذلك"),
+        "Theme": MessageLookupByLibrary.simpleMessage("ثيم"),
+        "TopCategories": MessageLookupByLibrary.simpleMessage("افضل الاصناف"),
         "TrendingDishes":
-            MessageLookupByLibrary.simpleMessage("Trending Dishes"),
-        "addToBasket": MessageLookupByLibrary.simpleMessage(" Add to basket"),
-        "address": MessageLookupByLibrary.simpleMessage("Address"),
-        "deliveredBy": MessageLookupByLibrary.simpleMessage("Delivered by"),
-        "deliveredTime": MessageLookupByLibrary.simpleMessage("Delivery Time"),
-        "deliveryFee": MessageLookupByLibrary.simpleMessage("Delivery Fee"),
+            MessageLookupByLibrary.simpleMessage("الاطباق المنتشرة"),
+        "addToBasket": MessageLookupByLibrary.simpleMessage("أضف إلى السلة"),
+        "address": MessageLookupByLibrary.simpleMessage("العنوان"),
+        "deliveredBy":
+            MessageLookupByLibrary.simpleMessage("تم التوصيل بواسطة"),
+        "deliveredTime": MessageLookupByLibrary.simpleMessage("وقت التسليم"),
+        "deliveryFee": MessageLookupByLibrary.simpleMessage("رسوم التوصيل"),
         "dishDescription":
-            MessageLookupByLibrary.simpleMessage("Chinese | Thai | Seaf.."),
-        "egy": MessageLookupByLibrary.simpleMessage("EGY"),
-        "egy25": MessageLookupByLibrary.simpleMessage("EGY 25.00"),
-        "favourites": MessageLookupByLibrary.simpleMessage("Favourites"),
-        "foodipal": MessageLookupByLibrary.simpleMessage("Foodipal"),
-        "freeDelivery": MessageLookupByLibrary.simpleMessage("Free Delivery"),
-        "getStarted": MessageLookupByLibrary.simpleMessage("Get Started  "),
-        "help": MessageLookupByLibrary.simpleMessage("Help"),
-        "heyThere": MessageLookupByLibrary.simpleMessage(" Hey there!"),
-        "localBrands": MessageLookupByLibrary.simpleMessage("Local Brands"),
+            MessageLookupByLibrary.simpleMessage("صيني | مأكولات بحرية "),
+        "egy": MessageLookupByLibrary.simpleMessage("ج.م"),
+        "egy25": MessageLookupByLibrary.simpleMessage("25 جنيهًا مصريًا"),
+        "favourites": MessageLookupByLibrary.simpleMessage("المفضلات"),
+        "foodipal": MessageLookupByLibrary.simpleMessage("فوديبال"),
+        "freeDelivery": MessageLookupByLibrary.simpleMessage("شحن مجاني"),
+        "getStarted": MessageLookupByLibrary.simpleMessage("البدء"),
+        "help": MessageLookupByLibrary.simpleMessage("المساعدة"),
+        "localBrands": MessageLookupByLibrary.simpleMessage("منتجات محلية"),
         "loginOrCreateAnAccount":
-            MessageLookupByLibrary.simpleMessage("Log in or create an account"),
-        "min": MessageLookupByLibrary.simpleMessage("25 mins"),
-        "myAccount": MessageLookupByLibrary.simpleMessage("myAccount"),
-        "myOrders": MessageLookupByLibrary.simpleMessage("My Orders"),
-        "next": MessageLookupByLibrary.simpleMessage("Next"),
-        "offers": MessageLookupByLibrary.simpleMessage("Offers"),
+            MessageLookupByLibrary.simpleMessage("سجل او أنشأ حساب "),
+        "min": MessageLookupByLibrary.simpleMessage("25 دقيقة"),
+        "myAccount": MessageLookupByLibrary.simpleMessage("حسابي"),
+        "myOrders": MessageLookupByLibrary.simpleMessage("طلباتي"),
+        "next": MessageLookupByLibrary.simpleMessage("التالي"),
+        "offers": MessageLookupByLibrary.simpleMessage("عروض"),
         "onboardingSubTitleFour": MessageLookupByLibrary.simpleMessage(
-            " Get yummy deticious food at your\n service in within less time "),
+            "احصل على طعام شهي ولذيذ في خدمتك في وقت أقل"),
+        "onboardingSubTitleThree": MessageLookupByLibrary.simpleMessage(
+            "احصل على طعام شهي ولذيذ في خدمتك في وقت أقل"),
         "onboardingSubTitleTwo": MessageLookupByLibrary.simpleMessage(
-            " Get yummy deticious food at your\n service in within less time"),
+            "احصل على طعام شهي ولذيذ في خدمتك في وقت أقل"),
         "onboardingSubtitleOne": MessageLookupByLibrary.simpleMessage(
-            "Get yummy deticious food at your\n service in within less time"),
+            "احصل على طعام شهي ولذيذ في خدمتك في وقت أقل"),
         "onboardingTitleFour":
-            MessageLookupByLibrary.simpleMessage("Get any Pacage Delivered"),
+            MessageLookupByLibrary.simpleMessage("تسليم أي حزمة"),
         "onboardingTitleOne":
-            MessageLookupByLibrary.simpleMessage("Food delivery at door ste "),
+            MessageLookupByLibrary.simpleMessage("توصيل الطعام عند الباب"),
         "onboardingTitleThree": MessageLookupByLibrary.simpleMessage(
-            " Dine In in fine resturants  "),
-        "onboardingTitleTwo": MessageLookupByLibrary.simpleMessage(
-            "Grocery & Essentials Delivery "),
-        "others": MessageLookupByLibrary.simpleMessage("others"),
-        "payment": MessageLookupByLibrary.simpleMessage("Payment"),
-        "popular": MessageLookupByLibrary.simpleMessage("Popular"),
-        "pureVeg": MessageLookupByLibrary.simpleMessage("Pure Veg"),
-        "rating": MessageLookupByLibrary.simpleMessage("Ratings"),
-        "restaurantName": MessageLookupByLibrary.simpleMessage("StarBucks"),
-        "salad": MessageLookupByLibrary.simpleMessage("Salad"),
-        "settings": MessageLookupByLibrary.simpleMessage("Settings"),
-        "signUp": MessageLookupByLibrary.simpleMessage(" Sign up"),
-        "sixtyMin": MessageLookupByLibrary.simpleMessage("  60 mins"),
-        "skip": MessageLookupByLibrary.simpleMessage("skip"),
-        "sortBy": MessageLookupByLibrary.simpleMessage("Sort By"),
+            "تناول الطعام في المطاعم الراقية"),
+        "onboardingTitleTwo":
+            MessageLookupByLibrary.simpleMessage("توصيل البقالة والضروريات"),
+        "others": MessageLookupByLibrary.simpleMessage("آخرين"),
+        "payment": MessageLookupByLibrary.simpleMessage("الدفع"),
+        "popular": MessageLookupByLibrary.simpleMessage("مشهور"),
+        "pureVeg": MessageLookupByLibrary.simpleMessage("نباتي"),
+        "rating": MessageLookupByLibrary.simpleMessage("التقييم"),
+        "restaurantName": MessageLookupByLibrary.simpleMessage("ستاربكس"),
+        "salad": MessageLookupByLibrary.simpleMessage("سلطة"),
+        "settings": MessageLookupByLibrary.simpleMessage("الاعدادات"),
+        "signUp": MessageLookupByLibrary.simpleMessage("التسجيل"),
+        "sixtyMin": MessageLookupByLibrary.simpleMessage("60 دقيقة"),
+        "skip": MessageLookupByLibrary.simpleMessage("تخطى"),
+        "sortBy": MessageLookupByLibrary.simpleMessage("ترتيب ب"),
         "thisRestaurantNotAcceptedRequetsts":
             MessageLookupByLibrary.simpleMessage(
-                "This resturant does not currently accept \n special requests"),
-        "userName": MessageLookupByLibrary.simpleMessage("User Name")
+                "هذا المطعم لا يقبل الطلبات الخاصة حاليًا"),
+        "userName": MessageLookupByLibrary.simpleMessage("اسم المستخدم")
       };
 }

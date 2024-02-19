@@ -79,6 +79,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "offers": MessageLookupByLibrary.simpleMessage("عروض"),
         "onboardingSubTitleFour": MessageLookupByLibrary.simpleMessage(
             "احصل على طعام شهي ولذيذ في خدمتك في وقت أقل"),
+        "onboardingSubTitleThree": MessageLookupByLibrary.simpleMessage(
+            "احصل على طعام شهي ولذيذ في خدمتك في وقت أقل"),
         "onboardingSubTitleTwo": MessageLookupByLibrary.simpleMessage(
             "احصل على طعام شهي ولذيذ في خدمتك في وقت أقل"),
         "onboardingSubtitleOne": MessageLookupByLibrary.simpleMessage(

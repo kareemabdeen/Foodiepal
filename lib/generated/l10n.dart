@@ -50,642 +50,640 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `Deliver Now`
+  /// `توصيل الآن`
   String get DeliverNow {
     return Intl.message(
-      'Deliver Now',
+      'توصيل الآن',
       name: 'DeliverNow',
       desc: '',
       args: [],
     );
   }
 
-  /// `Hi guest`
+  /// `مرحبا بك ضيفنا`
   String get HiGuest {
     return Intl.message(
-      'Hi guest',
+      'مرحبا بك ضيفنا',
       name: 'HiGuest',
       desc: '',
       args: [],
     );
   }
 
-  /// `Search for food, grocery, meat etc`
+  /// `ابحث عن الطعام والبقالة واللحوم وما إلى ذلك`
   String get SearchForFood {
     return Intl.message(
-      'Search for food, grocery, meat etc',
+      'ابحث عن الطعام والبقالة واللحوم وما إلى ذلك',
       name: 'SearchForFood',
       desc: '',
       args: [],
     );
   }
 
-  /// `Food`
+  /// `طعام`
   String get Food {
     return Intl.message(
-      'Food',
+      'طعام',
       name: 'Food',
       desc: '',
       args: [],
     );
   }
 
-  /// `Best Offers`
+  /// `أفضل العروض`
   String get BestOffers {
     return Intl.message(
-      'Best Offers',
+      'أفضل العروض',
       name: 'BestOffers',
       desc: '',
       args: [],
     );
   }
 
-  /// `Popular Restaurants`
+  /// `المطاعم المشهورة`
   String get PopularRestaurants {
     return Intl.message(
-      'Popular Restaurants',
+      'المطاعم المشهورة',
       name: 'PopularRestaurants',
       desc: '',
       args: [],
     );
   }
 
-  /// `Best To Dine-In`
+  /// `الافضل لتناول الطعام`
   String get BestToDineIn {
     return Intl.message(
-      'Best To Dine-In',
+      'الافضل لتناول الطعام',
       name: 'BestToDineIn',
       desc: '',
       args: [],
     );
   }
 
-  /// `Home`
+  /// ` الرئيسية`
   String get Home {
     return Intl.message(
-      'Home',
+      ' الرئيسية',
       name: 'Home',
       desc: '',
       args: [],
     );
   }
 
-  /// `Dine In`
+  /// `تناول الطعام في المطعم`
   String get DineIn {
     return Intl.message(
-      'Dine In',
+      'تناول الطعام في المطعم',
       name: 'DineIn',
       desc: '',
       args: [],
     );
   }
 
-  /// `Get Started  `
+  /// `البدء`
   String get getStarted {
     return Intl.message(
-      'Get Started  ',
+      'البدء',
       name: 'getStarted',
       desc: '',
       args: [],
     );
   }
 
-  /// `Salad`
+  /// `سلطة`
   String get salad {
     return Intl.message(
-      'Salad',
+      'سلطة',
       name: 'salad',
       desc: '',
       args: [],
     );
   }
 
-  /// `25 mins`
+  /// `25 دقيقة`
   String get min {
     return Intl.message(
-      '25 mins',
+      '25 دقيقة',
       name: 'min',
       desc: '',
       args: [],
     );
   }
 
-  /// `Chinese | Thai | Seaf..`
+  /// `صيني | مأكولات بحرية `
   String get dishDescription {
     return Intl.message(
-      'Chinese | Thai | Seaf..',
+      'صيني | مأكولات بحرية ',
       name: 'dishDescription',
       desc: '',
       args: [],
     );
   }
 
-  /// `Food delivery at door ste `
+  /// `توصيل الطعام عند الباب`
   String get onboardingTitleOne {
     return Intl.message(
-      'Food delivery at door ste ',
+      'توصيل الطعام عند الباب',
       name: 'onboardingTitleOne',
       desc: '',
       args: [],
     );
   }
 
-  /// `Grocery & Essentials Delivery `
+  /// `توصيل البقالة والضروريات`
   String get onboardingTitleTwo {
     return Intl.message(
-      'Grocery & Essentials Delivery ',
+      'توصيل البقالة والضروريات',
       name: 'onboardingTitleTwo',
       desc: '',
       args: [],
     );
   }
 
-  /// ` Dine In in fine resturants  `
+  /// `تناول الطعام في المطاعم الراقية`
   String get onboardingTitleThree {
     return Intl.message(
-      ' Dine In in fine resturants  ',
+      'تناول الطعام في المطاعم الراقية',
       name: 'onboardingTitleThree',
       desc: '',
       args: [],
     );
   }
 
-  /// `Get any Pacage Delivered`
+  /// `تسليم أي حزمة`
   String get onboardingTitleFour {
     return Intl.message(
-      'Get any Pacage Delivered',
+      'تسليم أي حزمة',
       name: 'onboardingTitleFour',
       desc: '',
       args: [],
     );
   }
 
-  /// `Get yummy deticious food at your\n service in within less time`
+  /// `احصل على طعام شهي ولذيذ في خدمتك في وقت أقل`
   String get onboardingSubtitleOne {
     return Intl.message(
-      'Get yummy deticious food at your\n service in within less time',
+      'احصل على طعام شهي ولذيذ في خدمتك في وقت أقل',
       name: 'onboardingSubtitleOne',
       desc: '',
       args: [],
     );
   }
 
-  /// ` Get yummy deticious food at your\n service in within less time`
+  /// `احصل على طعام شهي ولذيذ في خدمتك في وقت أقل`
   String get onboardingSubTitleTwo {
     return Intl.message(
-      ' Get yummy deticious food at your\n service in within less time',
+      'احصل على طعام شهي ولذيذ في خدمتك في وقت أقل',
       name: 'onboardingSubTitleTwo',
       desc: '',
       args: [],
     );
   }
 
-  // skipped getter for the 'onboardingSubTitleThree ' key
+  /// `احصل على طعام شهي ولذيذ في خدمتك في وقت أقل`
+  String get onboardingSubTitleThree {
+    return Intl.message(
+      'احصل على طعام شهي ولذيذ في خدمتك في وقت أقل',
+      name: 'onboardingSubTitleThree',
+      desc: '',
+      args: [],
+    );
+  }
 
-  /// ` Get yummy deticious food at your\n service in within less time `
+  /// `احصل على طعام شهي ولذيذ في خدمتك في وقت أقل`
   String get onboardingSubTitleFour {
     return Intl.message(
-      ' Get yummy deticious food at your\n service in within less time ',
+      'احصل على طعام شهي ولذيذ في خدمتك في وقت أقل',
       name: 'onboardingSubTitleFour',
       desc: '',
       args: [],
     );
   }
 
-  /// `This resturant does not currently accept \n special requests`
-  String get thisRestaurantNotAcceptedRequetsts {
-    return Intl.message(
-      'This resturant does not currently accept \n special requests',
-      name: 'thisRestaurantNotAcceptedRequetsts',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// ` Add to basket`
-  String get addToBasket {
-    return Intl.message(
-      ' Add to basket',
-      name: 'addToBasket',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Next`
-  String get next {
-    return Intl.message(
-      'Next',
-      name: 'next',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `skip`
-  String get skip {
-    return Intl.message(
-      'skip',
-      name: 'skip',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `others`
-  String get others {
-    return Intl.message(
-      'others',
-      name: 'others',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Offers`
-  String get offers {
-    return Intl.message(
-      'Offers',
-      name: 'offers',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Foodipal`
-  String get foodipal {
-    return Intl.message(
-      'Foodipal',
-      name: 'foodipal',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Delivered by`
-  String get deliveredBy {
-    return Intl.message(
-      'Delivered by',
-      name: 'deliveredBy',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Delivery Time`
-  String get deliveredTime {
-    return Intl.message(
-      'Delivery Time',
-      name: 'deliveredTime',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `  60 mins`
-  String get sixtyMin {
-    return Intl.message(
-      '  60 mins',
-      name: 'sixtyMin',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Delivery Fee`
-  String get deliveryFee {
-    return Intl.message(
-      'Delivery Fee',
-      name: 'deliveryFee',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `EGY 25.00`
-  String get egy25 {
-    return Intl.message(
-      'EGY 25.00',
-      name: 'egy25',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `EGY`
-  String get egy {
-    return Intl.message(
-      'EGY',
-      name: 'egy',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `StarBucks`
-  String get restaurantName {
-    return Intl.message(
-      'StarBucks',
-      name: 'restaurantName',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Ratings`
-  String get rating {
-    return Intl.message(
-      'Ratings',
-      name: 'rating',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// ` Sign up`
-  String get signUp {
-    return Intl.message(
-      ' Sign up',
-      name: 'signUp',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// ` Hey there!`
-  String get heyThere {
-    return Intl.message(
-      ' Hey there!',
-      name: 'heyThere',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Log in or create an account`
+  /// `سجل او أنشأ حساب `
   String get loginOrCreateAnAccount {
     return Intl.message(
-      'Log in or create an account',
+      'سجل او أنشأ حساب ',
       name: 'loginOrCreateAnAccount',
       desc: '',
       args: [],
     );
   }
 
-  /// `Log in or create an account for a faster ordering experience.`
-  String get LogInOrCreateAnAccountForAFasterOrderingExperience {
-    return Intl.message(
-      'Log in or create an account for a faster ordering experience.',
-      name: 'LogInOrCreateAnAccountForAFasterOrderingExperience',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Continue with Facebook`
+  /// `سجل ياستخدام فيس بوك`
   String get ContinueWithFacebook {
     return Intl.message(
-      'Continue with Facebook',
+      'سجل ياستخدام فيس بوك',
       name: 'ContinueWithFacebook',
       desc: '',
       args: [],
     );
   }
 
-  /// `Continue with Google`
+  /// `سجل ياستخدام جوجل`
   String get ContinueWithGoogle {
     return Intl.message(
-      'Continue with Google',
+      'سجل ياستخدام جوجل',
       name: 'ContinueWithGoogle',
       desc: '',
       args: [],
     );
   }
 
-  /// `Continue with Email`
+  /// `سجل باستخدام البريد الالكتروني`
   String get ContinueWithEmail {
     return Intl.message(
-      'Continue with Email',
+      'سجل باستخدام البريد الالكتروني',
       name: 'ContinueWithEmail',
       desc: '',
       args: [],
     );
   }
 
-  /// `User Name`
+  /// `سجل دخولك او انشأ حساب لتجربة افضل وسرعة تسوق وحفظ بيناتك والكثير من المميزات`
+  String get LogInOrCreateAnAccountForAFasterOrderingExperience {
+    return Intl.message(
+      'سجل دخولك او انشأ حساب لتجربة افضل وسرعة تسوق وحفظ بيناتك والكثير من المميزات',
+      name: 'LogInOrCreateAnAccountForAFasterOrderingExperience',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `هذا المطعم لا يقبل الطلبات الخاصة حاليًا`
+  String get thisRestaurantNotAcceptedRequetsts {
+    return Intl.message(
+      'هذا المطعم لا يقبل الطلبات الخاصة حاليًا',
+      name: 'thisRestaurantNotAcceptedRequetsts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `أضف إلى السلة`
+  String get addToBasket {
+    return Intl.message(
+      'أضف إلى السلة',
+      name: 'addToBasket',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `التالي`
+  String get next {
+    return Intl.message(
+      'التالي',
+      name: 'next',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تخطى`
+  String get skip {
+    return Intl.message(
+      'تخطى',
+      name: 'skip',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `آخرين`
+  String get others {
+    return Intl.message(
+      'آخرين',
+      name: 'others',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `عروض`
+  String get offers {
+    return Intl.message(
+      'عروض',
+      name: 'offers',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `فوديبال`
+  String get foodipal {
+    return Intl.message(
+      'فوديبال',
+      name: 'foodipal',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تم التوصيل بواسطة`
+  String get deliveredBy {
+    return Intl.message(
+      'تم التوصيل بواسطة',
+      name: 'deliveredBy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `وقت التسليم`
+  String get deliveredTime {
+    return Intl.message(
+      'وقت التسليم',
+      name: 'deliveredTime',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `60 دقيقة`
+  String get sixtyMin {
+    return Intl.message(
+      '60 دقيقة',
+      name: 'sixtyMin',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `رسوم التوصيل`
+  String get deliveryFee {
+    return Intl.message(
+      'رسوم التوصيل',
+      name: 'deliveryFee',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `25 جنيهًا مصريًا`
+  String get egy25 {
+    return Intl.message(
+      '25 جنيهًا مصريًا',
+      name: 'egy25',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `ج.م`
+  String get egy {
+    return Intl.message(
+      'ج.م',
+      name: 'egy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `ستاربكس`
+  String get restaurantName {
+    return Intl.message(
+      'ستاربكس',
+      name: 'restaurantName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `التقييم`
+  String get rating {
+    return Intl.message(
+      'التقييم',
+      name: 'rating',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `التسجيل`
+  String get signUp {
+    return Intl.message(
+      'التسجيل',
+      name: 'signUp',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `اسم المستخدم`
   String get userName {
     return Intl.message(
-      'User Name',
+      'اسم المستخدم',
       name: 'userName',
       desc: '',
       args: [],
     );
   }
 
-  /// `Hey there`
+  /// `أهلا بك`
   String get HeyThere {
     return Intl.message(
-      'Hey there',
+      'أهلا بك',
       name: 'HeyThere',
       desc: '',
       args: [],
     );
   }
 
-  /// `myAccount`
+  /// `حسابي`
   String get myAccount {
     return Intl.message(
-      'myAccount',
+      'حسابي',
       name: 'myAccount',
       desc: '',
       args: [],
     );
   }
 
-  /// `Address`
+  /// `العنوان`
   String get address {
     return Intl.message(
-      'Address',
+      'العنوان',
       name: 'address',
       desc: '',
       args: [],
     );
   }
 
-  /// `Favourites`
+  /// `المفضلات`
   String get favourites {
     return Intl.message(
-      'Favourites',
+      'المفضلات',
       name: 'favourites',
       desc: '',
       args: [],
     );
   }
 
-  /// `Settings`
+  /// `الاعدادات`
   String get settings {
     return Intl.message(
-      'Settings',
+      'الاعدادات',
       name: 'settings',
       desc: '',
       args: [],
     );
   }
 
-  /// `Payment`
+  /// `الدفع`
   String get payment {
     return Intl.message(
-      'Payment',
+      'الدفع',
       name: 'payment',
       desc: '',
       args: [],
     );
   }
 
-  /// `My Orders`
+  /// `طلباتي`
   String get myOrders {
     return Intl.message(
-      'My Orders',
+      'طلباتي',
       name: 'myOrders',
       desc: '',
       args: [],
     );
   }
 
-  /// `Help`
+  /// `المساعدة`
   String get help {
     return Intl.message(
-      'Help',
+      'المساعدة',
       name: 'help',
       desc: '',
       args: [],
     );
   }
 
-  /// `Theme`
+  /// `ثيم`
   String get Theme {
     return Intl.message(
-      'Theme',
+      'ثيم',
       name: 'Theme',
       desc: '',
       args: [],
     );
   }
 
-  /// `Change Language`
+  /// `تغيير اللغة`
   String get ChangeLanguage {
     return Intl.message(
-      'Change Language',
+      'تغيير اللغة',
       name: 'ChangeLanguage',
       desc: '',
       args: [],
     );
   }
 
-  /// `Local Brands`
+  /// `منتجات محلية`
   String get localBrands {
     return Intl.message(
-      'Local Brands',
+      'منتجات محلية',
       name: 'localBrands',
       desc: '',
       args: [],
     );
   }
 
-  /// `Popular`
+  /// `مشهور`
   String get popular {
     return Intl.message(
-      'Popular',
+      'مشهور',
       name: 'popular',
       desc: '',
       args: [],
     );
   }
 
-  /// `Pure Veg`
+  /// `نباتي`
   String get pureVeg {
     return Intl.message(
-      'Pure Veg',
+      'نباتي',
       name: 'pureVeg',
       desc: '',
       args: [],
     );
   }
 
-  /// `Free Delivery`
+  /// `شحن مجاني`
   String get freeDelivery {
     return Intl.message(
-      'Free Delivery',
+      'شحن مجاني',
       name: 'freeDelivery',
       desc: '',
       args: [],
     );
   }
 
-  /// `Sort By`
+  /// `ترتيب ب`
   String get sortBy {
     return Intl.message(
-      'Sort By',
+      'ترتيب ب',
       name: 'sortBy',
       desc: '',
       args: [],
     );
   }
 
-  /// `Top categories`
+  /// `افضل الاصناف`
   String get TopCategories {
     return Intl.message(
-      'Top categories',
+      'افضل الاصناف',
       name: 'TopCategories',
       desc: '',
       args: [],
     );
   }
 
-  /// `Trending Dishes`
+  /// `الاطباق المنتشرة`
   String get TrendingDishes {
     return Intl.message(
-      'Trending Dishes',
+      'الاطباق المنتشرة',
       name: 'TrendingDishes',
       desc: '',
       args: [],
     );
   }
 
-  /// `Recent Searches`
+  /// `اخر البحث`
   String get RecentSearches {
     return Intl.message(
-      'Recent Searches',
+      'اخر البحث',
       name: 'RecentSearches',
       desc: '',
       args: [],
     );
   }
 
-  /// `Pizza`
+  /// `بيتزا`
   String get Pizza {
     return Intl.message(
-      'Pizza',
+      'بيتزا',
       name: 'Pizza',
       desc: '',
       args: [],
     );
   }
 
-  /// `Koshary`
+  /// `كشري`
   String get Koshary {
     return Intl.message(
-      'Koshary',
+      'كشري',
       name: 'Koshary',
       desc: '',
       args: [],
     );
   }
 
-  /// `PanneerMomos`
+  /// `مأكولات بحرية`
   String get PanneerMomos {
     return Intl.message(
-      'PanneerMomos',
+      'مأكولات بحرية',
       name: 'PanneerMomos',
       desc: '',
       args: [],

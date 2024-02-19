@@ -1,106 +1,78 @@
 {
-
- "DeliverNow" :"Deliver Now",
- "HiGuest":"Hi guest",
- "SearchForFood" :"Search for food, grocery, meat etc",
- "Food" : "Food",
- "BestOffers" :"Best Offers",
- "PopularRestaurants":"Popular Restaurants",
- "BestToDineIn":"Best To Dine-In",
- "Home":"Home",
- "DineIn": "Dine In",
- "getStarted" : "Get Started  ",
- "salad" : "Salad",
- "min":"25 mins",
- "dishDescription":"Chinese | Thai | Seaf..",
-  "onboardingTitleOne" : "Food delivery at door ste ",
-    "onboardingTitleTwo" : "Grocery & Essentials Delivery ",
-    "onboardingTitleThree" : " Dine In in fine resturants  ",
-    "onboardingTitleFour" : "Get any Pacage Delivered",
-    "onboardingSubtitleOne" :
-    "Get yummy deticious food at your\n service in within less time" ,
-    "onboardingSubTitleTwo" :
-   " Get yummy deticious food at your\n service in within less time" ,
-    "onboardingSubTitleThree ":
-    "Get yummy deticious food at your\n service in within less time" ,
-    "onboardingSubTitleFour" :
-   " Get yummy deticious food at your\n service in within less time ",
-    "thisRestaurantNotAcceptedRequetsts" :
-   "This resturant does not currently accept \n special requests",
-   
-    "addToBasket" : " Add to basket" ,
-   
-    "next" :  "Next"   ,
-   
-    "skip" : "skip",
-   
-    "others" : "others",
-   
-    "offers" :  "Offers" ,
-   
-    "foodipal" :  "Foodipal" ,
-   
-    "deliveredBy" : "Delivered by",
-   
-    "deliveredTime" : "Delivery Time",
-   
-    "sixtyMin" :"  60 mins" ,
-   
-    "deliveryFee" :  "Delivery Fee" ,
-   
-    "egy25" :  "EGY 25.00" ,
-   
-    "egy" : "EGY",
-   
-    "restaurantName" :  "StarBucks" ,
-   
-    "rating" :  "Ratings" ,
-   
-    "signUp" : " Sign up" ,
-   
-    "heyThere" : " Hey there!" ,
-   
-    "loginOrCreateAnAccount" :
-   "Log in or create an account",
-   "LogInOrCreateAnAccountForAFasterOrderingExperience" :"Log in or create an account for a faster ordering experience.",
-   "ContinueWithFacebook":"Continue with Facebook",
-   "ContinueWithGoogle":"Continue with Google",
-   "ContinueWithEmail":"Continue with Email",
-  
-
-   "userName": "User Name",
-   "HeyThere" : "Hey there",
+    "DeliverNow": "توصيل الآن",
+    "HiGuest": "مرحبا بك ضيفنا",
+    "SearchForFood": "ابحث عن الطعام والبقالة واللحوم وما إلى ذلك",
+    "Food": "طعام",
+    "BestOffers": "أفضل العروض",
+    "PopularRestaurants": "المطاعم المشهورة",
+    "BestToDineIn": "الافضل لتناول الطعام",
+    "Home": " الرئيسية",
+    "DineIn": "تناول الطعام في المطعم",
+    "getStarted": "البدء",
+    "salad" :"سلطة",
+    "min":"25 دقيقة",
+    "dishDescription":"صيني | مأكولات بحرية ",
+    "onboardingTitleOne": "توصيل الطعام عند الباب",
+    "onboardingTitleTwo": "توصيل البقالة والضروريات",
+    "onboardingTitleThree": "تناول الطعام في المطاعم الراقية",
+    "onboardingTitleFour": "تسليم أي حزمة",
+    "onboardingSubtitleOne": "احصل على طعام شهي ولذيذ في خدمتك في وقت أقل",
+    "onboardingSubTitleTwo": "احصل على طعام شهي ولذيذ في خدمتك في وقت أقل",
+    "onboardingSubTitleThree": "احصل على طعام شهي ولذيذ في خدمتك في وقت أقل",
+    "onboardingSubTitleFour": "احصل على طعام شهي ولذيذ في خدمتك في وقت أقل",
+    "loginOrCreateAnAccount" :"سجل او أنشأ حساب ",
+    "ContinueWithFacebook":"سجل ياستخدام فيس بوك",
+    "ContinueWithGoogle":"سجل ياستخدام جوجل",
+    "ContinueWithEmail":"سجل باستخدام البريد الالكتروني",
+   "LogInOrCreateAnAccountForAFasterOrderingExperience" :"سجل دخولك او انشأ حساب لتجربة افضل وسرعة تسوق وحفظ بيناتك والكثير من المميزات",
+    "thisRestaurantNotAcceptedRequetsts": "هذا المطعم لا يقبل الطلبات الخاصة حاليًا",
+    "addToBasket": "أضف إلى السلة",
+    "next": "التالي",
+    "skip": "تخطى",
+    "others": "آخرين",
+    "offers": "عروض",
+    "foodipal": "فوديبال",
+    "deliveredBy": "تم التوصيل بواسطة",
+    "deliveredTime": "وقت التسليم",
+    "sixtyMin": "60 دقيقة",
+    "deliveryFee": "رسوم التوصيل",
+    "egy25": "25 جنيهًا مصريًا",
+    "egy": "ج.م",
+    "restaurantName": "ستاربكس",
+    "rating": "التقييم",
+    "signUp": "التسجيل",
+    "userName": "اسم المستخدم",
+   "HeyThere" : "أهلا بك",
  
-    "myAccount" : "myAccount",
+    "myAccount" : "حسابي",
    
-    "address" :  "Address" ,
+    "address" :  "العنوان" ,
    
-    "favourites" :  "Favourites" ,
+    "favourites" :  "المفضلات" ,
    
-    "settings" :  "Settings" ,
+    "settings" :  "الاعدادات" ,
    
-    "payment" : "Payment",
+    "payment" : "الدفع",
    
-    "myOrders" : "My Orders",
+    "myOrders" : "طلباتي",
    
-    "help" :  "Help" ,
-    "Theme" :"Theme",
-   "ChangeLanguage":"Change Language",
-    "localBrands" : "Local Brands",
+    "help" :  "المساعدة" ,
+    "Theme" :"ثيم",
+    "ChangeLanguage":"تغيير اللغة",
+    "localBrands" : "منتجات محلية",
    
-    "popular" : "Popular",
+    "popular" : "مشهور",
    
-    "pureVeg" : "Pure Veg",
+    "pureVeg" : "نباتي",
    
-    "freeDelivery" : "Free Delivery",
+    "freeDelivery" : "شحن مجاني",
    
-    "sortBy" : "Sort By",
-    "TopCategories" :"Top categories",
-    "TrendingDishes":"Trending Dishes",
-    "RecentSearches":"Recent Searches",
-    "Pizza":"Pizza",
-    "Koshary" : "Koshary",
-    "PanneerMomos":"PanneerMomos" 
-
-
-}
+    "sortBy" : "ترتيب ب",
+    "TopCategories" :"افضل الاصناف",
+    "TrendingDishes":"الاطباق المنتشرة",
+    "RecentSearches":"اخر البحث",
+    "Pizza":"بيتزا",
+    "Koshary" : "كشري",
+    "PanneerMomos":"مأكولات بحرية" 
+  }
+  
