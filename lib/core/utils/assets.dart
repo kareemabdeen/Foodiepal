@@ -59,7 +59,7 @@ class Assets {
 
   /// assets/images/pizza (1).jpg
 
-  static const String imagesPizza = "assets/images/pizza (1).jpg";
+  static const String imagesPizza = "assets/images/imagesPizza.jpg";
 
   /// Assets for imagesStarbucksLogo
 

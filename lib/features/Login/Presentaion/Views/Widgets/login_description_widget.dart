@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/generated/l10n.dart';
 
 import '../../../../../core/utils/helper.dart';
 
@@ -12,21 +13,16 @@ class LoginDescription extends StatelessWidget {
         SizedBox(
           height: context.screenHight * .05,
         ),
-        const Text(
-          'Login or create an account',
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
+        Text(S.of(context).loginOrCreateAnAccount,
+            textAlign: TextAlign.center,
+            style: Theme.of(context).textTheme.headlineMedium),
         SizedBox(
           height: context.screenHight * .01,
         ),
-        const Text(
-          'Login or create an account to receive rewards \nand save your details for a faster checkout \nexperience.',
+        Text(
+          S.of(context).LogInOrCreateAnAccountForAFasterOrderingExperience,
           textAlign: TextAlign.center,
-          style: TextStyle(fontSize: 16, color: Colors.grey),
+          style: const TextStyle(fontSize: 16, color: Colors.grey),
         ),
       ],
     );

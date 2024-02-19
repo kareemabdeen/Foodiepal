@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/generated/l10n.dart';
 
 import '../../../../Home/presentation/views/Styles/ItemsTextStyles.dart';
 import '../../../../Home/presentation/views/widgets/resturant_rating_distance_widget.dart';
@@ -8,8 +9,8 @@ class OfferDetailsWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.only(left: 16),
+    return Padding(
+      padding: const EdgeInsets.only(left: 4),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -17,20 +18,22 @@ class OfferDetailsWidget extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('Momoz', style: ItemsTextStyles.textStyle18),
-              Text('Chinese | Thai | Seafood',
+              Text(S.of(context).salad,
+                  style: Theme.of(context).textTheme.headlineMedium!),
+              Text(S.of(context).dishDescription,
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
-                  style: ItemsTextStyles.textStyle14)
+                  style: Theme.of(context).textTheme.headlineSmall!)
             ],
           ),
           Column(
+            crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               Text(
                 "19.5\$",
-                style: ItemsTextStyles.textStyle18,
+                style: Theme.of(context).textTheme.headlineMedium!,
               ),
-              ResturantRatingAndDistanceWidget(),
+              const ResturantRatingAndDistanceWidget(),
             ],
           )
         ],

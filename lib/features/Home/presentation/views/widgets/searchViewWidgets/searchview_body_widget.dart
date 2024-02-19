@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/generated/l10n.dart';
 
 import '../../../../../../core/utils/helper.dart';
 import '../../../../../Offers/presention/Views/Widgets/offers_view_appbar.dart';
@@ -33,11 +34,11 @@ class SearchViewBody extends StatelessWidget {
           const SizedBox(
             height: 16,
           ),
-          const ListViewWithTitle(
+          ListViewWithTitle(
             listViewHeight: 130,
             scrollDirection: Axis.horizontal,
             physics: BouncingScrollPhysics(),
-            listViewTitle: 'Top categories',
+            listViewTitle: S.of(context).TopCategories,
             listViewWidget: Padding(
               padding: EdgeInsets.only(
                 left: 18,
@@ -49,19 +50,19 @@ class SearchViewBody extends StatelessWidget {
           const SizedBox(
             height: 24,
           ),
-          const ListViewWithTitle(
+          ListViewWithTitle(
             physics: BouncingScrollPhysics(),
             scrollDirection: Axis.vertical,
-            listViewTitle: 'Trending Dishes',
+            listViewTitle: S.of(context).TrendingDishes,
             listViewWidget: TrendingListTileItem(),
           ),
           const SizedBox(
             height: 24,
           ),
-          const ListViewWithTitle(
-            physics: NeverScrollableScrollPhysics(),
+          ListViewWithTitle(
+            physics: const NeverScrollableScrollPhysics(),
             scrollDirection: Axis.vertical,
-            listViewTitle: 'Recent Searches',
+            listViewTitle: S.of(context).RecentSearches,
             listViewWidget: RecentSearchesListTileItem(),
           ),
         ],

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:food_app/core/Business%20Logic/Theme%20Cubit/theme_cubit.dart';
 import 'package:food_app/core/utils/helper.dart';
 import 'package:food_app/core/utils/styles.dart';
 import 'package:food_app/core/widgets/primary_button_widget.dart';
@@ -37,7 +39,7 @@ class CartItemsListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: context.screenHight * 0.27,
+      height: context.screenHight * 0.3,
       child: ListView.builder(
           itemCount: 12,
           shrinkWrap: true,
@@ -53,6 +55,7 @@ class CartButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String theme = BlocProvider.of<ThemeCubit>(context).getCurrentTheme();
     return MaterialButton(
         height: context.screenHight * .056,
         minWidth: context.screenWidth * .94,
@@ -63,12 +66,9 @@ class CartButton extends StatelessWidget {
             Radius.circular(5),
           ),
         ),
-        color: Colors.black,
-        child: const Text(
-          'Checkout',
-          style: TextStyle(
-            fontSize: 15,
-          ),
-        ));
+        color: theme == 'light' ? Colors.black : Colors.white,
+        child: Text('Checkout',
+            style: Theme.of(context).textTheme.titleSmall!.copyWith(
+                color: theme == 'light' ? Colors.white : Colors.black)));
   }
 }

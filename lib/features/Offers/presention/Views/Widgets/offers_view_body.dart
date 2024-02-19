@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/generated/l10n.dart';
 
 import '../../../../../core/utils/helper.dart';
 import '../../../../../core/utils/styles.dart';
@@ -21,9 +22,9 @@ class OffersViewBody extends StatelessWidget {
             children: [
               const OffersViewAppBar(),
               const SizedBox(height: 10),
-              const Text(
-                'Offers',
-                style: StylesManager.textStyle26,
+              Text(
+                S.of(context).offers,
+                style: Theme.of(context).textTheme.headlineLarge!,
               ),
               SizedBox(
                 width: context.screenWidth,

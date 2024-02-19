@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/features/Offers/presention/Views/Widgets/offers_view_appbar.dart';
+import 'package:food_app/generated/l10n.dart';
 
 import '../../../../../core/utils/styles.dart';
 import '../../../../Home/presentation/views/widgets/custom_appBar.dart';
@@ -11,38 +12,35 @@ class MenuViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        const Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 15.0,
-            vertical: 10,
+    return SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 15.0),
+            child: CustomAppBar(
+              title: S.of(context).userName,
+              titleStyle: Theme.of(context).textTheme.headlineLarge!,
+              subTitle: '+91 0520545164',
+              subTitleStyle: Theme.of(context)
+                  .textTheme
+                  .headlineSmall!
+                  .copyWith(color: Colors.grey, fontSize: 15.00),
+              icon: Icons.person_outline,
+              iconSize: 48,
+              iconFunction: () {},
+            ),
           ),
-          child: OffersViewAppBar(),
-        ),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15.0),
-          child: CustomAppBar(
-            title: 'Vicky john',
-            titleStyle: StylesManager.textStyle30,
-            subTitle: '+91 0520545164',
-            subTitleStyle: StylesManager.textStyle16
-                .copyWith(color: Colors.black.withOpacity(0.5)),
-            icon: Icons.person_outline,
-            iconSize: 48,
-            iconFunction: () {},
+          const Padding(
+            padding: EdgeInsets.only(top: 12.0, right: 12, left: 12),
+            child: SignUpReminder(),
           ),
-        ),
-        const Padding(
-          padding: EdgeInsets.only(top: 12.0, right: 12, left: 12),
-          child: SignUpReminder(),
-        ),
-        const Padding(
-          padding: EdgeInsets.all(15.0),
-          child: MenuButtonsList(),
-        ),
-      ],
+          const Padding(
+            padding: EdgeInsets.all(15.0),
+            child: MenuButtonsList(),
+          ),
+        ],
+      ),
     );
   }
 }

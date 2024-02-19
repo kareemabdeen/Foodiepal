@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/generated/l10n.dart';
 
 import '../../../../../core/utils/helper.dart';
 import '../../../../../core/utils/styles.dart';
@@ -23,11 +24,13 @@ class HomeViewBody extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 5),
             child: CustomAppBar(
-              title: 'Deliver Now',
-              titleStyle: StylesManager.textStyle16
-                  .copyWith(color: Colors.black.withOpacity(0.5)),
-              subTitle: 'Hi guest',
-              subTitleStyle: StylesManager.textStyle30,
+              title: S.of(context).DeliverNow,
+              titleStyle: Theme.of(context)
+                  .textTheme
+                  .titleSmall!
+                  .copyWith(color: Colors.grey, fontWeight: FontWeight.w400),
+              subTitle: S.of(context).HiGuest,
+              subTitleStyle: Theme.of(context).textTheme.headlineLarge!,
               icon: Icons.person_outline,
               iconFunction: () => context.simplePush(
                 const MenuView(), // Todo:  recheck name on these page => meeting
@@ -67,11 +70,10 @@ class HomeViewBody extends StatelessWidget {
           const Padding(
             padding: EdgeInsets.symmetric(vertical: 8.0),
             child: CustomCarouselSlider(),
-
           ),
           ListViewWithTitle(
             listViewHeight: context.screenHight * 0.29,
-            listViewTitle: 'Best Offers',
+            listViewTitle: S.of(context).BestOffers,
             scrollDirection: Axis.horizontal,
             listViewWidget: const ResturantListViewItem(),
             physics: const BouncingScrollPhysics(),
@@ -80,7 +82,7 @@ class HomeViewBody extends StatelessWidget {
           ListViewWithTitle(
             listViewHeight: context.screenHight * 0.29,
             scrollDirection: Axis.horizontal,
-            listViewTitle: 'Popular Restaurants',
+            listViewTitle: S.of(context).PopularRestaurants,
             listViewWidget: const ResturantListViewItem(),
             physics: const BouncingScrollPhysics(),
           ),
@@ -88,7 +90,7 @@ class HomeViewBody extends StatelessWidget {
           ListViewWithTitle(
             listViewHeight: context.screenHight * 0.29,
             scrollDirection: Axis.horizontal,
-            listViewTitle: 'Best To Dine-In',
+            listViewTitle: S.of(context).BestToDineIn,
             listViewWidget: const ResturantListViewItem(),
             physics: const BouncingScrollPhysics(),
           ),

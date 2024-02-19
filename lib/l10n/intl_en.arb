@@ -1,0 +1,106 @@
+{
+
+ "DeliverNow" :"Deliver Now",
+ "HiGuest":"Hi guest",
+ "SearchForFood" :"Search for food, grocery, meat etc",
+ "Food" : "Food",
+ "BestOffers" :"Best Offers",
+ "PopularRestaurants":"Popular Restaurants",
+ "BestToDineIn":"Best To Dine-In",
+ "Home":"Home",
+ "DineIn": "Dine In",
+ "getStarted" : "Get Started  ",
+ "salad" : "Salad",
+ "min":"25 mins",
+ "dishDescription":"Chinese | Thai | Seaf..",
+  "onboardingTitleOne" : "Food delivery at door ste ",
+    "onboardingTitleTwo" : "Grocery & Essentials Delivery ",
+    "onboardingTitleThree" : " Dine In in fine resturants  ",
+    "onboardingTitleFour" : "Get any Pacage Delivered",
+    "onboardingSubtitleOne" :
+    "Get yummy deticious food at your\n service in within less time" ,
+    "onboardingSubTitleTwo" :
+   " Get yummy deticious food at your\n service in within less time" ,
+    "onboardingSubTitleThree ":
+    "Get yummy deticious food at your\n service in within less time" ,
+    "onboardingSubTitleFour" :
+   " Get yummy deticious food at your\n service in within less time ",
+    "thisRestaurantNotAcceptedRequetsts" :
+   "This resturant does not currently accept \n special requests",
+   
+    "addToBasket" : " Add to basket" ,
+   
+    "next" :  "Next"   ,
+   
+    "skip" : "skip",
+   
+    "others" : "others",
+   
+    "offers" :  "Offers" ,
+   
+    "foodipal" :  "Foodipal" ,
+   
+    "deliveredBy" : "Delivered by",
+   
+    "deliveredTime" : "Delivery Time",
+   
+    "sixtyMin" :"  60 mins" ,
+   
+    "deliveryFee" :  "Delivery Fee" ,
+   
+    "egy25" :  "EGY 25.00" ,
+   
+    "egy" : "EGY",
+   
+    "restaurantName" :  "StarBucks" ,
+   
+    "rating" :  "Ratings" ,
+   
+    "signUp" : " Sign up" ,
+   
+    "heyThere" : " Hey there!" ,
+   
+    "loginOrCreateAnAccount" :
+   "Log in or create an account",
+   "LogInOrCreateAnAccountForAFasterOrderingExperience" :"Log in or create an account for a faster ordering experience.",
+   "ContinueWithFacebook":"Continue with Facebook",
+   "ContinueWithGoogle":"Continue with Google",
+   "ContinueWithEmail":"Continue with Email",
+  
+
+   "userName": "User Name",
+   "HeyThere" : "Hey there",
+ 
+    "myAccount" : "myAccount",
+   
+    "address" :  "Address" ,
+   
+    "favourites" :  "Favourites" ,
+   
+    "settings" :  "Settings" ,
+   
+    "payment" : "Payment",
+   
+    "myOrders" : "My Orders",
+   
+    "help" :  "Help" ,
+    "Theme" :"Theme",
+   "ChangeLanguage":"Change Language",
+    "localBrands" : "Local Brands",
+   
+    "popular" : "Popular",
+   
+    "pureVeg" : "Pure Veg",
+   
+    "freeDelivery" : "Free Delivery",
+   
+    "sortBy" : "Sort By",
+    "TopCategories" :"Top categories",
+    "TrendingDishes":"Trending Dishes",
+    "RecentSearches":"Recent Searches",
+    "Pizza":"Pizza",
+    "Koshary" : "Koshary",
+    "PanneerMomos":"PanneerMomos" 
+
+
+}

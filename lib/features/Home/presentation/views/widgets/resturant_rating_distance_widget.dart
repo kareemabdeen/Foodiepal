@@ -7,9 +7,9 @@ class ResturantRatingAndDistanceWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       children: [
-        Icon(
+        const Icon(
           Icons.star,
           color: Colors.orange,
           size: 14,
@@ -17,7 +17,7 @@ class ResturantRatingAndDistanceWidget extends StatelessWidget {
         Text('4.2 | 1Km | 28 Mins',
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: ItemsTextStyles.textStyle14),
+            style: Theme.of(context).textTheme.headlineSmall!),
       ],
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/core/global/themes/light_theme.dart';
 
 extension MediaQueryHelper on BuildContext {
   double get screenHight => MediaQuery.of(this).size.height;
@@ -52,4 +53,34 @@ extension PaddingList on List<Widget> {
       ),
     ).toList();
   }
+}
+
+TextTheme buildAppTextTheme({Color? color = Colors.black}) {
+  return TextTheme(
+    ///HeadlineLarge
+    headlineLarge: TextStyle(
+        fontSize: AppFontSizes.headlineLarge,
+        fontWeight: FontWeight.w700,
+        color: color),
+
+    ///HeadlineSmall
+    headlineSmall: const TextStyle(
+        fontFamily: 'Montserrat',
+        fontSize: AppFontSizes.headlineSmall,
+        color: Colors.grey,
+        fontWeight: FontWeight.w400),
+
+    ///HeadlineMedium
+    headlineMedium: TextStyle(
+        fontSize: AppFontSizes.headlineMedium,
+        fontWeight: FontWeight.w600,
+        color: color),
+
+    ///HeadlineSmallBlack
+    titleSmall: TextStyle(
+        fontFamily: 'Montserrat',
+        fontSize: AppFontSizes.headlineSmall,
+        color: color,
+        fontWeight: FontWeight.w400),
+  );
 }

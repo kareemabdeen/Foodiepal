@@ -28,7 +28,10 @@ class ListViewWithTitle extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 15.0),
           child: Text(
             listViewTitle,
-            style: ItemsTextStyles.headerText24,
+            style: Theme.of(context)
+                .textTheme
+                .headlineLarge!
+                .copyWith(fontSize: 22, fontWeight: FontWeight.w800),
           ),
         ),
         Padding(

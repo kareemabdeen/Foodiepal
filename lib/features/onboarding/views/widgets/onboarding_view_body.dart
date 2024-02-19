@@ -1,8 +1,12 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:food_app/constant.dart';
 import 'package:food_app/core/database/cache/cach_helper.dart';
 import 'package:food_app/core/services/dependency_injection.dart';
+import 'package:food_app/core/utils/assets.dart';
 import 'package:food_app/features/onboarding/data/onboarding_model.dart';
+import 'package:food_app/generated/l10n.dart';
 
 import '../../../../core/utils/app_router.dart';
 import '../../../../core/utils/helper.dart';
@@ -19,32 +23,6 @@ class OnBoardingViewBody extends StatefulWidget {
 class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
   final PageController pageController = PageController();
 
-  List<OnBoardingModel> onboardingList = [
-    OnBoardingModel(
-      title: 'Dine In in fine resturants ',
-      image: 'assets/images/WhatsApp Image 2023-10-24 at 9.35.09 PM.jpeg',
-      subTitile:
-          'Get yummy deticious food at your\n service in within less time',
-    ),
-    OnBoardingModel(
-      title: 'Food delivery at door step',
-      image: 'assets/images/WhatsApp Image 2023-10-24 at 9.35.08 PM (1).jpeg',
-      subTitile:
-          'Get yummy deticious food at your\n service in within less time',
-    ),
-    OnBoardingModel(
-      title: 'Grocery & Essentials Delivery ',
-      image: 'assets/images/WhatsApp Image 2023-10-24 at 9.35.08 PM.jpeg',
-      subTitile:
-          'Get yummy deticious food at your\n service in within less time',
-    ),
-    OnBoardingModel(
-      title: 'Get any Pacage Delivered',
-      image: 'assets/images/WhatsApp Image 2023-10-24 at 9.35.08 PM (1).jpeg',
-      subTitile:
-          'Get yummy deticious food at your\n service in within less time',
-    ),
-  ];
   int? currentPageNumber;
 
   @override
@@ -55,6 +33,28 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
 
   @override
   Widget build(BuildContext context) {
+    List<OnBoardingModel> onboardingList = [
+      OnBoardingModel(
+        title: S.of(context).onboardingTitleOne,
+        image: Assets.imagesOnboardingimg2,
+        subTitile: S.of(context).onboardingSubtitleOne,
+      ),
+      OnBoardingModel(
+        title: S.of(context).onboardingTitleTwo,
+        image: Assets.imagesOnboardingimg2,
+        subTitile: S.of(context).onboardingSubTitleTwo,
+      ),
+      OnBoardingModel(
+        title: S.of(context).onboardingTitleThree,
+        image: Assets.imagesOnboardingimg3,
+        subTitile: S.of(context).onboardingSubTitleFour,
+      ),
+      OnBoardingModel(
+        title: S.of(context).onboardingTitleFour,
+        image: Assets.imagesOnboardingimg4,
+        subTitile: S.of(context).onboardingSubTitleFour,
+      ),
+    ];
     return PageView.builder(
       onPageChanged: (pageindex) {
         setState(
@@ -90,34 +90,28 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
                 ),
               ),
               //Todo : images should be changed later .
-              Text(
-                onboardingList[index].title,
-                style: const TextStyle(
-                  color: Colors.black,
-                  fontWeight: FontWeight.w900,
-                  fontSize: 25,
-                ),
-              ),
+              Text(onboardingList[index].title,
+                  style: Theme.of(context)
+                      .textTheme
+                      .headlineLarge!
+                      .copyWith(fontSize: 25)),
               SizedBox(
                 height: context.screenHight * .013,
               ),
-              Text(
-                onboardingList[index].subTitile,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.grey[400],
-                  fontSize: 15,
-                ),
-              ),
+              Text(onboardingList[index].subTitile,
+                  textAlign: TextAlign.center,
+                  style: Theme.of(context).textTheme.headlineSmall),
               SizedBox(
                 height: context.screenHight * .055,
               ),
               GeneralButton(
-                text: (currentPageNumber == 3) ? 'Get Started  ' : 'Next  ',
+                text: (currentPageNumber == 3)
+                    ? S.of(context).getStarted
+                    : S.of(context).next,
                 onPressed: () {
-                  onboardingVisited();
                   navigateToNextPage();
                   if (currentPageNumber == 3) {
+                    onboardingVisited();
                     context.pushWithReplacmentNamed(
                       AppRouter.kLoginPage,
                     );
@@ -131,14 +125,12 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
               (currentPageNumber != 3)
                   ? InkWell(
                       onTap: () {},
-                      child: const Text(
-                        'Skip',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.w800,
-                          fontSize: 16,
-                        ),
-                      ),
+                      child: Text(S.of(context).skip,
+                          style: Theme.of(context)
+                              .textTheme
+                              .titleSmall!
+                              .copyWith(
+                                  fontWeight: FontWeight.w800, fontSize: 16)),
                     )
                   : const SizedBox.shrink(),
             ],
