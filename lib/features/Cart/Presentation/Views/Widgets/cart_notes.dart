@@ -16,6 +16,7 @@ class CartNotes extends StatelessWidget {
         ),
         const Spacer(),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Icon(
               Icons.mode_comment_outlined,
@@ -26,7 +27,7 @@ class CartNotes extends StatelessWidget {
             ),
             Text(
               "This resturant does not currently accept \n special requests",
-              style: StylesManager.textStyle16.copyWith(color: Colors.grey),
+              style: Theme.of(context).textTheme.headlineSmall,
             ),
           ],
         ),

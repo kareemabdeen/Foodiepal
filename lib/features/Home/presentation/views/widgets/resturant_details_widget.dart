@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/generated/l10n.dart';
 
 import '../Styles/ItemsTextStyles.dart';
 import 'resturant_rating_distance_widget.dart';
@@ -8,15 +9,22 @@ class RestaurantDetailsWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text('Momoz', style: ItemsTextStyles.textStyle18),
-        Text('Chinese | Thai | Seaf..',
+        Text(
+          S.of(context).salad,
+          style: Theme.of(context)
+              .textTheme
+              .headlineMedium!
+              .copyWith(fontSize: 18),
+          overflow: TextOverflow.ellipsis,
+        ),
+        Text(S.of(context).dishDescription,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: ItemsTextStyles.textStyle13),
-        ResturantRatingAndDistanceWidget()
+            style: Theme.of(context).textTheme.headlineSmall!),
+        const ResturantRatingAndDistanceWidget()
       ],
     );
   }

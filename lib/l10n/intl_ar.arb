@@ -1,0 +1,78 @@
+{
+    "DeliverNow": "توصيل الآن",
+    "HiGuest": "مرحبا بك ضيفنا",
+    "SearchForFood": "ابحث عن الطعام والبقالة واللحوم وما إلى ذلك",
+    "Food": "طعام",
+    "BestOffers": "أفضل العروض",
+    "PopularRestaurants": "المطاعم المشهورة",
+    "BestToDineIn": "الافضل لتناول الطعام",
+    "Home": " الرئيسية",
+    "DineIn": "تناول الطعام في المطعم",
+    "getStarted": "البدء",
+    "salad" :"سلطة",
+    "min":"25 دقيقة",
+    "dishDescription":"صيني | مأكولات بحرية ",
+    "onboardingTitleOne": "توصيل الطعام عند الباب",
+    "onboardingTitleTwo": "توصيل البقالة والضروريات",
+    "onboardingTitleThree": "تناول الطعام في المطاعم الراقية",
+    "onboardingTitleFour": "تسليم أي حزمة",
+    "onboardingSubtitleOne": "احصل على طعام شهي ولذيذ في خدمتك في وقت أقل",
+    "onboardingSubTitleTwo": "احصل على طعام شهي ولذيذ في خدمتك في وقت أقل",
+    "onboardingSubTitleThree": "احصل على طعام شهي ولذيذ في خدمتك في وقت أقل",
+    "onboardingSubTitleFour": "احصل على طعام شهي ولذيذ في خدمتك في وقت أقل",
+    "loginOrCreateAnAccount" :"سجل او أنشأ حساب ",
+    "ContinueWithFacebook":"سجل ياستخدام فيس بوك",
+    "ContinueWithGoogle":"سجل ياستخدام جوجل",
+    "ContinueWithEmail":"سجل باستخدام البريد الالكتروني",
+   "LogInOrCreateAnAccountForAFasterOrderingExperience" :"سجل دخولك او انشأ حساب لتجربة افضل وسرعة تسوق وحفظ بيناتك والكثير من المميزات",
+    "thisRestaurantNotAcceptedRequetsts": "هذا المطعم لا يقبل الطلبات الخاصة حاليًا",
+    "addToBasket": "أضف إلى السلة",
+    "next": "التالي",
+    "skip": "تخطى",
+    "others": "آخرين",
+    "offers": "عروض",
+    "foodipal": "فوديبال",
+    "deliveredBy": "تم التوصيل بواسطة",
+    "deliveredTime": "وقت التسليم",
+    "sixtyMin": "60 دقيقة",
+    "deliveryFee": "رسوم التوصيل",
+    "egy25": "25 جنيهًا مصريًا",
+    "egy": "ج.م",
+    "restaurantName": "ستاربكس",
+    "rating": "التقييم",
+    "signUp": "التسجيل",
+    "userName": "اسم المستخدم",
+   "HeyThere" : "أهلا بك",
+ 
+    "myAccount" : "حسابي",
+   
+    "address" :  "العنوان" ,
+   
+    "favourites" :  "المفضلات" ,
+   
+    "settings" :  "الاعدادات" ,
+   
+    "payment" : "الدفع",
+   
+    "myOrders" : "طلباتي",
+   
+    "help" :  "المساعدة" ,
+    "Theme" :"ثيم",
+    "ChangeLanguage":"تغيير اللغة",
+    "localBrands" : "منتجات محلية",
+   
+    "popular" : "مشهور",
+   
+    "pureVeg" : "نباتي",
+   
+    "freeDelivery" : "شحن مجاني",
+   
+    "sortBy" : "ترتيب ب",
+    "TopCategories" :"افضل الاصناف",
+    "TrendingDishes":"الاطباق المنتشرة",
+    "RecentSearches":"اخر البحث",
+    "Pizza":"بيتزا",
+    "Koshary" : "كشري",
+    "PanneerMomos":"مأكولات بحرية" 
+  }
+  

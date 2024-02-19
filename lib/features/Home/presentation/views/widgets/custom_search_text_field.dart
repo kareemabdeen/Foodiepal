@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:food_app/generated/l10n.dart';
 
 class CustomSearchTextField extends StatelessWidget {
   const CustomSearchTextField({
@@ -22,8 +23,9 @@ class CustomSearchTextField extends StatelessWidget {
           enabledBorder: buildOutlineInputBorder(),
           focusedBorder: buildOutlineInputBorder(),
           border: InputBorder.none,
-          hintText: 'Search for food, grocery, meat etc',
-          hintStyle: const TextStyle(color: Colors.black26),
+          hintText: S.of(context).SearchForFood,
+          hintStyle:
+              Theme.of(context).textTheme.headlineSmall!.copyWith(fontSize: 16),
           filled: true,
           fillColor: Colors.black.withOpacity(0.026),
           prefixIcon: IconButton(

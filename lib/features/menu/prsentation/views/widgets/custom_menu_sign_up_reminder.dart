@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:food_app/generated/l10n.dart';
 
 import '../../../../../constant.dart';
 import '../../../../../core/utils/helper.dart';
@@ -26,39 +27,50 @@ class SignUpReminder extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Hey there!',
-                      style: StylesManager.titleMedium.copyWith(
-                          color: kBlueColor, letterSpacing: 1, fontSize: 22),
+                      S.of(context).HeyThere,
+                      style: Theme.of(context)
+                          .textTheme
+                          .headlineMedium!
+                          .copyWith(
+                              fontWeight: FontWeight.w700,
+                              color: kBlueColor,
+                              letterSpacing: 1,
+                              fontSize: 22),
                     ),
                     Text(
-                      "Log in or create an account for a faster ordering experience.",
-                      style: StylesManager.textStyle14.copyWith(
-                        color: kBlueColor,
-                      ),
+                      S
+                          .of(context)
+                          .LogInOrCreateAnAccountForAFasterOrderingExperience,
+                      style:
+                          Theme.of(context).textTheme.headlineSmall!.copyWith(
+                                color: kBlueColor,
+                              ),
                     ),
                     ElevatedButton(
-                      style: ButtonStyle(
-                        textStyle: MaterialStateProperty.all(
-                          StylesManager.textStyle18,
+
+                        style: ButtonStyle(
+                          textStyle: MaterialStateProperty.all(Theme.of(context)
+                              .textTheme
+                              .headlineMedium!
+                              .copyWith(color: Colors.white)),
+                          foregroundColor:
+                              MaterialStateProperty.all<Color>(Colors.white),
+                          backgroundColor:
+                              MaterialStateProperty.all<Color>(kBlueColor),
+                          shape:
+                              MaterialStateProperty.all<RoundedRectangleBorder>(
+                            const RoundedRectangleBorder(
+                                borderRadius: BorderRadius.all(
+                                  Radius.circular(10),
+                                ),
+                                side: BorderSide(color: kBlueColor)),
+                          ),
                         ),
-                        foregroundColor:
-                            MaterialStateProperty.all<Color>(Colors.white),
-                        backgroundColor:
-                            MaterialStateProperty.all<Color>(kBlueColor),
-                        shape:
-                            MaterialStateProperty.all<RoundedRectangleBorder>(
-                          const RoundedRectangleBorder(
-                              borderRadius: BorderRadius.all(
-                                Radius.circular(10),
-                              ),
-                              side: BorderSide(color: kBlueColor)),
-                        ),
-                      ),
-                      onPressed: () {},
-                      child: const Text(
-                        'Sign up',
-                      ),
-                    ),
+                        onPressed: () {},
+                        child: Text(
+                          S.of(context).signUp,
+                        ))
+
                   ],
                 ),
               ),

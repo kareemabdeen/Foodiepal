@@ -9,17 +9,8 @@ class GeneralButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialButton(
-      height: context.screenHight * .056,
-      minWidth: context.screenWidth * .94,
+    return ElevatedButton(
       onPressed: onPressed,
-      textColor: Colors.white,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.all(
-          Radius.circular(5),
-        ),
-      ),
-      color: Colors.black,
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [

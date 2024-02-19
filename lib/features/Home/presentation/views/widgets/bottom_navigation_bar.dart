@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/generated/l10n.dart';
 
 class BuildNavigatorBar extends StatefulWidget {
   const BuildNavigatorBar({
@@ -20,8 +21,8 @@ class _BuildNavigatorBarState extends State<BuildNavigatorBar> {
   @override
   Widget build(BuildContext context) {
     return NavigationBar(
-      indicatorColor: Colors.transparent,
-      backgroundColor: Colors.white,
+      indicatorColor: Theme.of(context).navigationBarTheme.indicatorColor,
+      backgroundColor: Theme.of(context).navigationBarTheme.backgroundColor,
       elevation: 0,
       shadowColor: Theme.of(context).navigationBarTheme.shadowColor,
       indicatorShape: ShapeBorder.lerp(
@@ -35,21 +36,21 @@ class _BuildNavigatorBarState extends State<BuildNavigatorBar> {
           currentPageIndex = slectedIndex;
         });
       },
-      destinations: const [
+      destinations: [
         NavigationDestination(
           selectedIcon: Icon(Icons.home),
           icon: Icon(Icons.home_outlined),
-          label: 'Home',
+          label: S.of(context).Home,
         ),
         NavigationDestination(
           icon: Icon(Icons.ramen_dining_outlined),
           selectedIcon: Icon(Icons.ramen_dining),
-          label: 'Food',
+          label: S.of(context).Food,
         ),
         NavigationDestination(
           selectedIcon: Icon(Icons.dining),
           icon: Icon(Icons.dining_outlined),
-          label: 'Dine In',
+          label: S.of(context).DineIn,
         ),
       ],
     );

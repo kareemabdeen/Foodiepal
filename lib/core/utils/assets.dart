@@ -72,9 +72,11 @@ class Assets {
 
   /// Assets for imagesStarbucksCover
 
+
+  static const String imagesPizza = "assets/images/imagesPizza.jpg";
+
   /// assets/images/starbucksCover.jpg
 
-  static const String imagesStarbucksCover = "assets/images/starbucksCover.jpg";
 
   /// Assets for imagesStarbucksLogo
 

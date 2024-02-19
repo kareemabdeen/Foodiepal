@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/generated/l10n.dart';
 
 import '../../../../../../core/utils/assets.dart';
 import '../../Styles/ItemsTextStyles.dart';
@@ -16,20 +17,14 @@ class TopCategoryItem extends StatelessWidget {
           height: 16,
         ),
         const CircleAvatar(
-          backgroundColor: Color(0xffF8F8F8),
           radius: 35,
           backgroundImage: AssetImage(Assets.imagesPizza),
         ),
         const SizedBox(
           height: 16,
         ),
-        Text(
-          'Pizza',
-          style: ItemsTextStyles.headerText24.copyWith(
-            color: Colors.black,
-            fontSize: 14,
-          ),
-        ),
+        Text(S.of(context).Pizza,
+            style: Theme.of(context).textTheme.titleSmall),
       ],
     );
   }

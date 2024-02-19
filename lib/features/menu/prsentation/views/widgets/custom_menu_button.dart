@@ -26,7 +26,7 @@ class CustomMenuButton extends StatelessWidget {
           const SizedBox(width: 8),
           Text(
             buttonTitle,
-            style: StylesManager.textStyle20,
+            style: Theme.of(context).textTheme.headlineMedium,
           ),
           const Spacer(),
           IconButton(

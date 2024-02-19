@@ -8,13 +8,13 @@ class PageTitleWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Text(
-          "Market",
-          style: StylesManager.textStyle20,
+        Text(
+          "Basket",
+          style: Theme.of(context).textTheme.headlineMedium!,
         ),
         Text(
           "KFC(6th of October - Lake Front)",
-          style: StylesManager.textStyle14.copyWith(color: Colors.grey),
+          style: Theme.of(context).textTheme.headlineSmall,
         ),
       ],
     );

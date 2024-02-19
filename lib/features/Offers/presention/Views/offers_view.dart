@@ -7,8 +7,12 @@ class OffersView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: SafeArea(child: OffersViewBody()),
+
+    return const SafeArea(
+      child: Scaffold(
+        body: OffersViewBody(),
+      ),
+
     );
   }
 }

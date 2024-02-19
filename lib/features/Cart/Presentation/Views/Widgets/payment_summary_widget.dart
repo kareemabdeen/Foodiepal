@@ -10,18 +10,20 @@ class PaymentSummary extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text("Payment Summary",
-            style: StylesManager.textStyle20
-                .copyWith(fontWeight: FontWeight.w600)),
+            style: Theme.of(context).textTheme.headlineMedium),
         const SizedBox(height: 10),
         const PaymentDetials(paymentTitle: 'Subtotal', price: 'EGP 87.00'),
         const SizedBox(height: 10),
         const PaymentDetials(paymentTitle: 'Delivery fee', price: 'EGP 35.00'),
         const SizedBox(height: 10),
+        //TODO : change font weight
         const PaymentDetials(paymentTitle: 'Total amount', price: 'EGP 112.00'),
         const SizedBox(height: 10),
         Text(
           "Read more about fees",
-          style: StylesManager.textStyle14
+          style: Theme.of(context)
+              .textTheme
+              .titleSmall!
               .copyWith(fontWeight: FontWeight.w500, color: Colors.blue),
         ),
       ],
@@ -40,14 +42,12 @@ class PaymentDetials extends StatelessWidget {
       children: [
         Text(
           paymentTitle,
-          style:
-              StylesManager.textStyle14.copyWith(fontWeight: FontWeight.w400),
+          style: Theme.of(context).textTheme.titleSmall,
         ),
         const Spacer(),
         Text(
           price,
-          style:
-              StylesManager.textStyle14.copyWith(fontWeight: FontWeight.w400),
+          style: Theme.of(context).textTheme.titleSmall,
         ),
       ],
     );

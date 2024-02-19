@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/core/widgets/background_icon.dart';
+
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:food_app/core/Business%20Logic/Theme%20Cubit/theme_cubit.dart';
+
+
 
 class CustomAppBar extends StatelessWidget {
   final String title;
@@ -23,6 +27,7 @@ class CustomAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String theme = BlocProvider.of<ThemeCubit>(context).getCurrentTheme();
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -40,11 +45,21 @@ class CustomAppBar extends StatelessWidget {
             ),
           ],
         ),
-        CustomIconWithBackground(
-          iconSize: iconSize,
-          icon: icon,
-          color: Colors.grey.shade200,
-        ),
+
+        Material(
+          borderRadius: BorderRadius.circular(50),
+          color: theme == 'light'
+              ? const Color(0xfff2f2f3)
+              : Color.fromARGB(61, 182, 177, 177),
+          child: IconButton(
+            icon: Icon(
+              icon,
+              color: theme == 'light' ? Colors.black : Colors.white,
+              size: iconSize,
+            ),
+            onPressed: iconFunction,
+          ),
+
       ],
     );
   }
