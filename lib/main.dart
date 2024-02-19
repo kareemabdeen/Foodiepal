@@ -10,9 +10,11 @@ import 'package:food_app/features/Splash/prsentation/views/splash_view.dart';
 import 'package:food_app/features/onboarding/views/onboarding_view.dart';
 import 'package:food_app/generated/l10n.dart';
 import 'core/database/cache/cach_helper.dart';
+import 'core/services/dependency_injection.dart';
 import 'core/utils/app_router.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

@@ -12,6 +12,7 @@ class OffersViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return SafeArea(
       child: Padding(
         padding: const EdgeInsets.only(left: 16, right: 16, top: 32, bottom: 8),
@@ -38,6 +39,7 @@ class OffersViewBody extends StatelessWidget {
               ),
             ],
           ),
+
         ),
       ),
     );

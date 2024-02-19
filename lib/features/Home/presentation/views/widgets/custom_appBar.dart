@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:food_app/core/Business%20Logic/Theme%20Cubit/theme_cubit.dart';
+
+
 
 class CustomAppBar extends StatelessWidget {
   final String title;
@@ -42,6 +45,7 @@ class CustomAppBar extends StatelessWidget {
             ),
           ],
         ),
+
         Material(
           borderRadius: BorderRadius.circular(50),
           color: theme == 'light'
@@ -55,7 +59,7 @@ class CustomAppBar extends StatelessWidget {
             ),
             onPressed: iconFunction,
           ),
-        ),
+
       ],
     );
   }

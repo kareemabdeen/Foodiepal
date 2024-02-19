@@ -22,7 +22,8 @@ class HomeViewBody extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 5),
+            padding:
+                const EdgeInsets.symmetric(horizontal: 15.0, vertical: 5),
             child: CustomAppBar(
               title: S.of(context).DeliverNow,
               titleStyle: Theme.of(context)

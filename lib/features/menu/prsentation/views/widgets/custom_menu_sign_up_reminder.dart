@@ -47,6 +47,7 @@ class SignUpReminder extends StatelessWidget {
                               ),
                     ),
                     ElevatedButton(
+
                         style: ButtonStyle(
                           textStyle: MaterialStateProperty.all(Theme.of(context)
                               .textTheme
@@ -69,6 +70,7 @@ class SignUpReminder extends StatelessWidget {
                         child: Text(
                           S.of(context).signUp,
                         ))
+
                   ],
                 ),
               ),
@@ -77,8 +79,7 @@ class SignUpReminder extends StatelessWidget {
             SizedBox(
               width: context.screenWidth * 0.3,
               child: CachedNetworkImage(
-                imageUrl:
-                    'https://knowunity.com/_next/static/media/register.957389f4.webp',
+                imageUrl: kloginReminderImage,
                 fit: BoxFit.cover,
               ),
             ),

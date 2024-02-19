@@ -26,6 +26,13 @@ class Assets {
   /// assets/images/foodDemo.jpg
 
   static const String imagesFoodDemo = "assets/images/foodDemo.jpg";
+
+  /// Assets for imagesImagesPizza
+
+  /// assets/images/imagesPizza.jpg
+
+  static const String imagesImagesPizza = "assets/images/imagesPizza.jpg";
+
   static const String imagesCartDemo = 'assets/images/pepsi.png';
 
   /// Assets for imagesLoginImg
@@ -55,15 +62,27 @@ class Assets {
   static const String imagesOnboardingimg4 =
       "assets/images/onboardingimg4.jpeg";
 
+  /// Assets for imagesSplashImage
+
+  /// assets/images/splashImage.json
+
   /// Assets for imagesPizza (1)
 
-  /// assets/images/pizza (1).jpg
+  static const String imagesSplashImage = "assets/images/splashImage.json";
+
+  /// Assets for imagesStarbucksCover
+
 
   static const String imagesPizza = "assets/images/imagesPizza.jpg";
+
+  /// assets/images/starbucksCover.jpg
+
 
   /// Assets for imagesStarbucksLogo
 
   /// assets/images/starbucks-logo.png
 
   static const String imagesStarbucksLogo = "assets/images/starbucks-logo.png";
+
+  static const String imagesPizza = "assets/images/imagesPizza.jpg";
 }
